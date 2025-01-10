@@ -53,7 +53,7 @@ export default function NewNavBar() {
     <nav className={`fixed left-full pt-5 w-52 z-50 text-azul font-poppins transition-all ease-in-out bg-marroncito h-dvh duration-500 flex flex-col justify-between ${visible ? "top-0 -translate-x-full opacity-100":"top-0 translate-x-0 opacity-0"}`}>
       <section>
       <div className="flex justify-end p-5">
-        <button className="text-3xl" onClick={() => setVisible(false)}>
+        <button className="text-3xl" onClick={() => setVisible(false)} aria-label="cancel">
           <FontAwesomeIcon icon={faXmark} />
         </button>
       </div>
@@ -66,7 +66,7 @@ export default function NewNavBar() {
         </li>
         <li className="flex justify-end items-center border-b-2 border-azul relative overflow-hidden">
           <div className={`hover:bg-azul hover:text-marroncito transition-all duration-500 ease-in-out relative text-right w-full flex justify-between`} to={"/servicios"} >
-            <button onClick={() => setListaDespegable((prev) => prev === 0 ? 2:0)} className="px-3 py-3 text-lg">
+            <button aria-label="desplegar" onClick={() => setListaDespegable((prev) => prev === 0 ? 2:0)} className="px-3 py-3 text-lg">
             {listaDespegable === 2 ? (
               <FontAwesomeIcon icon={faCaretUp} />
             ):(
@@ -79,7 +79,7 @@ export default function NewNavBar() {
         <div className={`transition-all ease-in-out duration-500 ${listaDespegable === 2 ? "h-[325px]":"h-0"}   overflow-hidden `}>
           {servLista.map((val,i) => (
             <li key={i} className="flex justify-end items-center border-b-2 border-azul relative overflow-hidden">
-            <button className={`hover:bg-azul hover:text-marroncito transition-all duration-500 ease-in-out relative py-3 px-2 text-right w-full "bg-marroncito text-azul`} to={"/test/test-de-ansiedad"} onClick={() => {
+            <button aria-label="nombre servicios" className={`hover:bg-azul hover:text-marroncito transition-all duration-500 ease-in-out relative py-3 px-2 text-right w-full "bg-marroncito text-azul`} to={"/test/test-de-ansiedad"} onClick={() => {
               actualizarUbi(val.id)
               history("/servicios")
               setVisible(false)
@@ -87,7 +87,7 @@ export default function NewNavBar() {
           </li>
           ))}
         </div>
-        <button className={`flex w-full justify-between items-center border-b-2 border-azul relative overflow-hidden transition-all ease-in-out duration-500 ${listaDespegable === 1 ? "bg-azul text-marroncito":""}`} onClick={() => setListaDespegable((prev) => prev === 0 ? 1:0)}>
+        <button aria-label="desplegar nav" className={`flex w-full justify-between items-center border-b-2 border-azul relative overflow-hidden transition-all ease-in-out duration-500 ${listaDespegable === 1 ? "bg-azul text-marroncito":""}`} onClick={() => setListaDespegable((prev) => prev === 0 ? 1:0)}>
           <span className="block px-3 text-lg">
             {listaDespegable === 1 ? (
               <FontAwesomeIcon icon={faCaretUp} />
@@ -159,37 +159,37 @@ export default function NewNavBar() {
           <NavLink className={({isActive}) => `${isActive ? "border-b-2 border-azul":""}`} to={"/servicios"}>SERVICIOS</NavLink>
           <ul className="absolute bg-marroncito p-0 space-y-3 transition-all duration-300 opacity-0 z-0 h-0 overflow-hidden group-hover:z-10 group-hover:opacity-100 group-hover:h-fit group-hover:p-3">
             <li>
-              <button onClick={() => {
+              <button aria-label="niños" onClick={() => {
                 actualizarUbi("bs-1")
                 history("/servicios")
               }}>Niños</button>
             </li>
             <li>
-              <button onClick={() => {
+              <button aria-label="jóvenes" onClick={() => {
                 actualizarUbi("bs-2")
                 history("/servicios")
               }}>Jóvenes</button>
             </li>
             <li>
-              <button onClick={() => {
+              <button aria-label="adultos" onClick={() => {
                 actualizarUbi("bs-3")
                 history("/servicios")
               }}>Adultos</button>
             </li>
             <li>
-              <button onClick={() => {
+              <button aria-label="adultos mayores" onClick={() => {
                 actualizarUbi("bs-4")
                 history("/servicios")
               }}>Adultos Mayores</button>
             </li>
             <li className="w-full text-left">
-              <button className="w-full text-left" onClick={() => {
+              <button aria-label="formación psicoterapéutica" className="w-full text-left" onClick={() => {
                 actualizarUbi("bes-5")
                 history("/servicios")
               }}>Formación Psicoterapéutica</button>
             </li>
             <li className="w-full text-left">
-              <button className="w-full text-left" onClick={() => {
+              <button aria-label="Talleres y eventos" className="w-full text-left" onClick={() => {
                 actualizarUbi("bes-6")
                 history("/servicios")
               }}>Talleres y eventos</button>

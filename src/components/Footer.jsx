@@ -1,4 +1,3 @@
-import "./Footer.css"
 import logo from "/logo_eades.webp"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
@@ -19,22 +18,37 @@ function Footer() {
         <div className="text-lg flex gap-2">
             <a
               className="a-display transition-all ease-in-out duration-500 hover:text-celeste"
+              aria-label="Enlace para entrar a whatsapp"
+              target="_blank"
+              rel="noopener noreferrer"
               href="https://api.whatsapp.com/send?phone=51930509438&text=Buenas%2C%20estoy%20interesad%40%20en%20sus%20servicios%2C%20mi%20nombre%20es..."
             >
               <FontAwesomeIcon icon={faWhatsapp} className="icon" />
             </a>
-            <a className="a-display transition-all ease-in-out duration-500 hover:text-celeste" href="https://www.facebook.com/EADESPeru">
+            <a 
+              className="a-display transition-all ease-in-out duration-500 hover:text-celeste" 
+              href="https://www.facebook.com/EADESPeru"
+              aria-label="Enlace para entrar a Facebook"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FontAwesomeIcon icon={faSquareFacebook} className="icon" />
             </a>
             <a
               className="a-display transition-all ease-in-out duration-500 hover:text-celeste"
               href="https://www.instagram.com/eadespsicoterapia/"
+              aria-label="Enlace para entrar a Instagram"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <FontAwesomeIcon icon={faInstagram} className="icon" />
             </a>
             <a
               className="a-display transition-all ease-in-out duration-500 hover:text-celeste"
               href="https://www.youtube.com/@eadespsicoterapia"
+              aria-label="Enlace para entrar a Youtube"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <FontAwesomeIcon icon={faYoutube} className="icon" />
             </a>

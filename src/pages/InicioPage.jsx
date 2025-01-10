@@ -2,7 +2,7 @@ import "./InicioPage.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import niños from "/niños.jpg"
 import jovenes from "/jovenes.jpg"
-import adultos from "/adultos_eades.jpg"
+import adultos from "/adultos.jpg"
 import adul_mayores from "/adulto_mayor_servicio_eades.webp"
 import formacionTera from "/formacion-psicoterapeuta-eades.JPG?url"
 import colegios from "/colegios-eades-min.jpg"
@@ -12,7 +12,7 @@ import {useUbiContext} from "../components/UserContext"
 import { useNavigate } from "react-router-dom"
 import dif1 from "/virtual.jpg"
 import dif2 from "/nuevo_eades_2.jpeg"
-import dif3 from "/nuevo_eades_3.jpeg"
+import dif3 from "/mayte_new.jpg"
 
 // Import Swiper styles
 import 'swiper/css';
@@ -32,6 +32,16 @@ const preguntasFrecuentes = [
     preg:"¿Cuáles son los métodos de pago?",
     icon:faMoneyBill1,
     res:"Aceptamos transferencias bancarias, tarjeta de crédito (recargo del 5%)."
+  },
+  {
+    preg:"¿Cuál es la diferencia con otro tipo de terapia?",
+    icon:faUsers,
+    res:"Hacemos un seguimiento constante al paciente. El terapeuta siempre va estar dispuesto a conversar con el paciente, incluso fuera del horario de las sesiones."
+  },
+  {
+    preg:"¿Tienen tarifa social?",
+    icon:faUserGear,
+    res:"Sí, contamos con una tarifa social (además de la tarifa regular)."
   },
   {
     preg:"¿Cuál es la diferencia con otro tipo de terapia?",
@@ -79,7 +89,7 @@ function InicioPage() {
               Seguimiento Constante
             </p>
           </div>
-          <img className="absolute z-10 top-0 left-0 rounded-3xl h-[350px] w-[300px] object-cover object-top" src={dif3}/>
+          <img className="absolute z-10 top-0 left-0 rounded-3xl h-[350px] w-[300px] object-cover object-top" alt="Seguimiento Constante EADES" src={dif3}/>
         </aside>
         <aside className="h-[350px] w-[300px] relative flex justify-center items-center rounded-3xl">
           <div className="h-[350px] w-[300px] relative z-20 bg-azul bg-opacity-50 text-white rounded-3xl text-center font-poppins sm:text-3xl text-xl flex justify-center items-center font-bold p-10">
@@ -87,7 +97,7 @@ function InicioPage() {
             Presencialidad
             </p>
           </div>
-          <img className="absolute z-10 top-0 left-0 rounded-3xl h-[350px] w-[300px] object-cover object-top" src={dif2}/>
+          <img className="absolute z-10 top-0 left-0 rounded-3xl h-[350px] w-[300px] object-cover object-top" alt="Presencialidad EADES" src={dif2}/>
         </aside>
         <aside className="h-[350px] w-[300px] relative flex justify-center items-center rounded-3xl">
           <div className="h-[350px] w-[300px] relative z-20 bg-azul bg-opacity-50 text-white rounded-3xl text-center font-poppins sm:text-3xl text-xl flex justify-center items-center font-bold p-10">
@@ -95,7 +105,7 @@ function InicioPage() {
             Virtualidad
             </p>
           </div>
-          <img className="absolute z-10 top-0 left-0 rounded-3xl h-[350px] w-[300px] object-cover object-top" src={dif1}/>
+          <img className="absolute z-10 top-0 left-0 rounded-3xl h-[350px] w-[300px] object-cover object-top" alt="Virtualidad" src={dif1}/>
         </aside>
       </section>
     </main>
@@ -115,9 +125,9 @@ function InicioPage() {
           </div>
         </div>
       </section>
-      <section className =" space-y-5">
+      <section className ="space-y-5">
         <h2 className="font-poppins sm:px-10 px-5 sm:text-4xl text-xl py-10 text-azul font-bold">SERVICIOS PSICOTERAPÉUTICOS</h2>
-        <section className="flex justify-center md:gap-10 gap-14 md:flex-row flex-col mb-10 py-10 bg-celeste">
+        <section className="flex justify-center md:gap-10 gap-14 md:flex-row flex-col mb-10 py-10 sm:px-10 px-5 bg-celeste">
           <div className="space-y-16 lg:space-y-0 flex lg:flex-row flex-col gap-10">
             <aside className="transition-all duration-500 ease-in-out hover:-translate-y-6 space-y-8">
               <img src={niños} className="md:w-96 md:h-96 w-full h-64 object-cover object-center "/>
@@ -205,7 +215,7 @@ function InicioPage() {
         <h2 className="text-azul text-4xl font-open-sans sm:px-10 px-5">Preguntas Frecuentes</h2>
         <section className="flex gap-5 md:flex-row flex-col justify-center items-center md:justify-start">
             <img src="/mayte_new.jpg" className="sm:w-1/2 object-cover object-[80%] rounded-tr-2xl rounded-br-2xl h-[550px]" />
-            <div className="grid gap-10 content-center sm:grid-cols-2 grid-cols-1 justify-center items-center w-fit">
+            <div className="grid gap-10 content-center lg:grid-cols-3 md:grid-cols-2 grid-cols-1 justify-center items-center w-fit">
               {preguntasFrecuentes.map((val,i) => (
                 <aside key={i} className="size-52 bg-marroncito p-5 shadow-xl flex justify-around items-center flex-col rounded-2xl text-azul">
                   <p className="text-center font-poppins flex-1 py-2">

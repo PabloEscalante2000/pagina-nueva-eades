@@ -5,7 +5,7 @@ export default function BloqServicio({servicio, num}) {
   return (
     <div className={`${num === 1 ?"bg-azul text-white": num === 2 ?"bg-marroncito text-azul":"bg-celeste text-azul"}  `}>
         <section id={servicio.id} className="max-w-[1500px] m-auto md:p-10 p-5 rounded-md flex gap-10 md:flex-row flex-col md:justify-start md:items-start justify-center items-center  ">
-            <img src={servicio.img} className="md:w-96 md:h-96 w-64 h-64 rounded-md object-cover object-center flex-none"/>
+            <img alt={servicio.id} src={servicio.img} className="md:w-96 md:h-96 w-64 h-64 rounded-md object-cover object-center flex-none"/>
             <aside className="font-open-sans ">
                 <h2 className={` font-poppins  md:text-4xl text-2xl `}>{servicio.nombre}</h2>
                 <div>
