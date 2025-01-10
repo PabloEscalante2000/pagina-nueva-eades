@@ -1,0 +1,41 @@
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario div {
+    min-width: 300px;
+    padding: 15px 20px;
+    border: 1px solid var(--azul-oscuro); 
+    border-radius: 30px;
+    margin: 10px 0px;
+    color: var(--azul-oscuro);
+    font-family: "Open-Sans-Regular";
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.formulario label {
+    min-width: 90px;
+}
+
+.formulario input {
+    padding: 0px 10px;
+    outline: none;
+    border: none;
+    width: 260px
+}
+
+.formulario button {
+    border: 0px;
+    padding: 8px 45px;
+    margin: 10px;
+    background-color: var(--azul-oscuro);
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: "Open-Sans-Regular";
+}

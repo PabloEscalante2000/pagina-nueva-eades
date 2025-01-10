@@ -1,0 +1,32 @@
+.footer {
+    background-color: var(--azul-oscuro);
+    color: white;
+    font-family: "Open-Sans-Regular";
+    font-size: var(--small);
+    padding: 50px;
+}
+
+.footer img {
+    height: 50px;
+}
+
+.footer p {
+    font-family: "Open-Sans-Bold";
+    padding-top: 30px;
+}
+
+.footer span {
+    padding-bottom: 20px;
+}
+
+.footer div {
+    display: flex;
+    justify-content: start;
+}
+
+.footer div a {
+    display: block;
+    padding: 10px 5px;
+    color: white;
+    font-size: var(--medium);
+}
