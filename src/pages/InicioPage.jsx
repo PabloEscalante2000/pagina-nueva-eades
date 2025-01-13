@@ -1,6 +1,6 @@
 import "./InicioPage.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import niños from "/niños.jpg"
+import niños from "/niños2.jpg"
 import jovenes from "/jovenes.jpg"
 import adultos from "/adultos.jpg"
 import adul_mayores from "/adulto_mayor_servicio_eades.webp"
@@ -194,16 +194,19 @@ function InicioPage() {
           </div>
         </section>
         <section className="my-5 bg-marroncito text-azul">
-          <div className="sm:px-10 sm:py-10 p-5 max-w-[1500px] m-auto flex md:flex-row flex-col md:justify-start md:items-stretch justify-center items-center sm:gap-10 gap-5">
-          <img src="/fundador.jpg" alt="César Escalante Sifuentes" className="w-96 rounded-lg flex-none"/>
+          <div className="sm:px-10 sm:py-10 p-5 max-w-[1000px] m-auto flex md:flex-row flex-col md:justify-start md:items-stretch justify-center items-center sm:gap-10 gap-5">
+          <img src="/fundador.jpg" alt="César Escalante Sifuentes" className="w-80 rounded-lg flex-none"/>
           <aside className="flex flex-col justify-between">
             <div>
-              <h2 className="font-poppins font-bold sm:text-4xl text-2xl">CONOCE AL FUNDADOR</h2>
-              <span className="sm:text-2xl text-lg font-open-sans">César Escalante</span>
-              <p className="font-open-sans sm:text-lg text-base py-3">
+              <h2 className="font-poppins font-bold sm:text-4xl text-3xl">CONOCE AL FUNDADOR</h2>
+              <span className="sm:text-2xl text-2xl font-open-sans text-black">César Escalante</span>
+              <p className="font-open-sans sm:text-xl text-base py-3 text-black">
               Fundador de Eades, co-fundador de Pseres y líder en el ámbito de la salud mental, 
               Él es un psicólogo clínico con maestría en Neuropsicología.<br/>Como psicoterapeuta psicoanalítico, cuenta con una sólida experiencia en el abordaje de trastornos de la personalidad y depresión; aportando un enfoque profundo y especializado al bienestar emocional de cada persona que acompaña en su proceso terapéutico.
               </p>
+              <span className="font-breathing text-black">
+                Cesar Escalante
+              </span>
             </div>
             <div>
                 <button className="text-marroncito bg-azul px-5 py-2 font-poppins font-bold transition-all duration-500 hover:bg-celeste block ml-auto">
@@ -261,8 +264,8 @@ function InicioPage() {
         </section> 
       <section className="space-y-5 py-5 sm:py-10">
         <h2 className="text-azul text-4xl font-open-sans sm:px-10 px-5">Preguntas Frecuentes</h2>
-        <section className="flex gap-5 md:flex-row flex-col justify-center items-center md:justify-start">
-            <img src="/preguntas_frecuentes.jpg" className="sm:w-1/2 object-cover object-[80%] rounded-tr-2xl rounded-br-2xl h-[550px]" />
+        <section className="flex gap-10 lg:flex-row flex-col-reverse justify-center items-center md:justify-start sm:p-16 p-10">
+            <img src="/preguntas_frecuentes.jpg" className="lg:w-1/2 object-cover rounded-tr-2xl rounded-br-2xl aspect-video flex-none" />
             <div className="grid gap-10 content-center lg:grid-cols-3 md:grid-cols-2 grid-cols-1 justify-center items-center w-fit">
               {preguntasFrecuentes.map((val,i) => (
                 <aside key={i} className="size-52 bg-marroncito p-5 shadow-xl flex justify-around items-center flex-col rounded-2xl text-azul">

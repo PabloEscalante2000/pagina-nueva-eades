@@ -1,4 +1,4 @@
-import niños from "/niños.jpg"
+import niños from "/niños2.jpg"
 import jovenes from "/jovenes.jpg"
 import adultos from "/adultos.jpg"
 import adul_mayores from "/adulto_mayor_servicio_eades.webp"

@@ -13,7 +13,8 @@ export default {
       },
       fontFamily:{
         "poppins":["'Poppins-Regular'","sans-serif"],
-        "open-sans":["'Open-Sans-Regular'","sans-serif"]
+        "open-sans":["'Open-Sans-Regular'","sans-serif"],
+        "breathing":["'Breathing'","sans-serif"]
       }
     },
   },

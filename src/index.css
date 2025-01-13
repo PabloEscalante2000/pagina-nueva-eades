@@ -47,6 +47,11 @@
     src: url(./fonts/OpenSans-Light.ttf);
 }
 
+@font-face {
+    font-family: "Breathing";
+    src: url(./fonts/Breathing.ttf);
+}
+
 @layer base {
     @font-face {
         font-family: "Poppins-Regular";
@@ -59,6 +64,14 @@
     @font-face {
         font-family: "Open-Sans-Regular";
         src: url(./fonts/OpenSans-Regular.ttf) format("truetype");
+        font-display: swap;
+        font-style: normal;
+        font-weight: 400;
+    }
+
+    @font-face {
+        font-family: "Breathing";
+        src: url(./fonts/Breathing.ttf) format("truetype");
         font-display: swap;
         font-style: normal;
         font-weight: 400;
