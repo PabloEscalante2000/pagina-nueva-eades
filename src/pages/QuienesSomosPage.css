@@ -103,12 +103,11 @@
     object-fit: cover;
     object-position: center;
     border-radius: 30px;
-    mask-image: linear-gradient(to bottom, black 65%, transparent 100%);
 }
 
 .psi-data .melissa-img {
-    object-position: top;
-    object-fit: contain;
+    object-position: center;
+    object-fit: cover;
 }
 
 .psi-data .mateo-img {
@@ -117,13 +116,13 @@
 }
 
 .psi-data .cesar-img {
-    object-position: top;
-    object-fit: contain;
+    object-position: center;
+    object-fit: cover;
 }
 
 .psi-data .mayte-img {
     object-position: top;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .psi-data {

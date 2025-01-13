@@ -58,17 +58,21 @@ function QuienesSomosPage() {
         <h1>Centro Psicoterapéutico EADES</h1>
         <p>El centro psicoterapéutico realiza diferentes tipos de eventos, convenios y acercamientos, donde podamos ayudar y brindar la información necesaria.</p>
       </section>
-      <section className="sm:p-10 p-5">
-        <h2 className="font-poppins sm:text-3xl text-xl text-azul">Quiénes Somos</h2>
-        <p className="font-open-sans text-lg text-azul py-10">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint, nisi quam a, non unde eligendi, eaque officia impedit voluptates minus quia nemo repellat. Illo adipisci, rerum ipsa fuga soluta similique? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique illum nulla dolore recusandae? Et non asperiores deleniti porro tenetur eligendi exercitationem, quis iste blanditiis quibusdam laboriosam doloribus quae dolore fugiat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste amet obcaecati doloremque mollitia hic! Corrupti fugit quis numquam provident error cumque fuga quidem sed quibusdam, inventore veniam, eveniet hic dolore?
-        </p>
+      <section className="sm:p-10 p-5 flex gap-10 lg:flex-row flex-col">
+        <aside>
+          <h2 className="font-poppins sm:text-3xl text-xl text-azul font-bold">Quiénes Somos</h2>
+          <p className="font-open-sans text-lg text-azul py-10">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint, nisi quam a, non unde eligendi, eaque officia impedit voluptates minus quia nemo repellat. Illo adipisci, rerum ipsa fuga soluta similique? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique illum nulla dolore recusandae? Et non asperiores deleniti porro tenetur eligendi exercitationem, quis iste blanditiis quibusdam laboriosam doloribus quae dolore fugiat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste amet obcaecati doloremque mollitia hic! Corrupti fugit quis numquam provident error cumque fuga quidem sed quibusdam, inventore veniam, eveniet hic dolore?
+          </p>
+        </aside>
+        <img src="preguntas_frecuentes.jpg" className="h-96 flex-none object-cover object-center" alt="EADES"/>
       </section>
       <section className="ter-qs bg-marroncito">
         <h2>Conoce nuestro equipo de Psicoterapeutas</h2>
         <section className="qs-cont-psi">
           <span onClick={backPsi} className={psi <= 0 ? "unactive":""}><FontAwesomeIcon icon={faArrowLeft}/></span>
           <section className="psi-data">
+            <img src={psicologo.img_url} alt={psicologo.nombre} className={classPsi}/>
             <aside>
               <h3>{psicologo.nombre}</h3>
               <em>{psicologo?.cpp}</em>
@@ -77,9 +81,9 @@ function QuienesSomosPage() {
                   return(<li key={index}>{e}</li>)
                 })}
               </ul>
-              <a href="https://api.whatsapp.com/send?phone=51930509438&text=Buenas%2C%20estoy%20interesad%40%20en%20sus%20servicios%2C%20mi%20nombre%20es..." target="_blank" className="px-3 py-1 bg-azul text-marroncito transition-all ease-in-out font-poppins hover:bg-marroncito hover:text-azul duration-500">Agenda tu cita</a>
+              <a href="https://api.whatsapp.com/send?phone=51930509438&text=Buenas%2C%20estoy%20interesad%40%20en%20sus%20servicios%2C%20mi%20nombre%20es..." target="_blank" className="border-2 border-azul px-3 py-1 bg-azul text-marroncito transition-all ease-in-out font-poppins hover:bg-marroncito hover:text-azul duration-500">Agenda tu cita</a>
             </aside>
-            <img src={psicologo.img_url} alt={psicologo.nombre} className={classPsi}/>
+            
           </section>
           <span onClick={nextPsi} className={psi >= 3 ? "unactive":""}><FontAwesomeIcon icon={faArrowRight}/></span>
         </section>
