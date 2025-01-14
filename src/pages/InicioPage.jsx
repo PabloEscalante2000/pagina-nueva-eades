@@ -157,6 +157,28 @@ function InicioPage() {
           </div>
         </section>
     </section>
+    <section className="my-5 bg-marroncito text-azul">
+          <div className="sm:px-10 sm:py-10 p-5 max-w-[1500px] m-auto flex md:flex-row flex-col md:justify-start md:items-stretch justify-center items-center sm:gap-10 gap-5">
+          <img src="/fundador.jpg" alt="César Escalante Sifuentes" className="w-96 h-96 object-cover object-center rounded-lg flex-none"/>
+          <aside className="flex flex-col justify-between">
+            <div>
+              <h2 className="font-poppins font-bold sm:text-4xl text-3xl">CONOCE AL FUNDADOR</h2>
+              <span className="sm:text-2xl text-2xl font-open-sans text-black">César Escalante</span>
+              <p className="font-open-sans sm:text-xl text-base py-3 text-black">
+              Fundador de Ilumina, fundador de Eades y cofundador de Pseres, líder en el ámbito de la salud mental con más de 25 años de experiencia. <br/>Psicólogo clínico con maestría en Neuropsicología, también se especializa en terapia de pareja. Como psicoterapeuta psicoanalítico, cuenta con una sólida trayectoria en el abordaje de trastornos de la personalidad y depresión, ofreciendo un enfoque profundo y especializado para promover el bienestar emocional de quienes acompaña en su proceso terapéutico.
+              </p>
+              <span className="font-breathing text-black">
+                Cesar Escalante
+              </span>
+            </div>
+            <div>
+                <button className="text-marroncito bg-azul px-5 py-2 font-poppins font-bold transition-all duration-500 hover:bg-celeste block ml-auto">
+                  Contáctanos
+                </button>
+            </div>
+          </aside>
+          </div>
+        </section>
     <main className="sec-inicio">
       <h2 className="!text-3xl sm:!text-5xl !font-poppins font-bold text-azul mb-20">¿Cómo nos diferenciamos de otros?</h2>
       <section className="flex justify-center items-center flex-wrap gap-24">
@@ -194,29 +216,7 @@ function InicioPage() {
         </div>
       </section>
       <section className ="space-y-5">
-        <section className="my-5 bg-marroncito text-azul">
-          <div className="sm:px-10 sm:py-10 p-5 max-w-[1000px] m-auto flex md:flex-row flex-col md:justify-start md:items-stretch justify-center items-center sm:gap-10 gap-5">
-          <img src="/fundador.jpg" alt="César Escalante Sifuentes" className="w-80 rounded-lg flex-none"/>
-          <aside className="flex flex-col justify-between">
-            <div>
-              <h2 className="font-poppins font-bold sm:text-4xl text-3xl">CONOCE AL FUNDADOR</h2>
-              <span className="sm:text-2xl text-2xl font-open-sans text-black">César Escalante</span>
-              <p className="font-open-sans sm:text-xl text-base py-3 text-black">
-              Fundador de Eades, co-fundador de Pseres y líder en el ámbito de la salud mental, 
-              Él es un psicólogo clínico con maestría en Neuropsicología.<br/>Como psicoterapeuta psicoanalítico, cuenta con una sólida experiencia en el abordaje de trastornos de la personalidad y depresión; aportando un enfoque profundo y especializado al bienestar emocional de cada persona que acompaña en su proceso terapéutico.
-              </p>
-              <span className="font-breathing text-black">
-                Cesar Escalante
-              </span>
-            </div>
-            <div>
-                <button className="text-marroncito bg-azul px-5 py-2 font-poppins font-bold transition-all duration-500 hover:bg-celeste block ml-auto">
-                  Contáctanos
-                </button>
-            </div>
-          </aside>
-          </div>
-        </section>
+        
         <section className="py-40 sm:px-10 px-5 flex justify-center items-center sm:gap-10 gap-5 flex-wrap">
             <aside className="text-azul font-poppins font-bold flex flex-col justify-center items-center">
               <h3 className="text-8xl">+30</h3>

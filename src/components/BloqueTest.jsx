@@ -194,8 +194,8 @@ export default function BloqueTest({ test, tipo }) {
         <div>
         {test[position] !== undefined ? (
           <section className={`section-test ${tipo === "ansiedad" ? "bg-ansiedad":tipo === "tlp" ? "bg-tlp":"bg-depresion"}`}>
-            <div className="space-y-10">
-            <h3 className="uppercase font-poppins text-azul text-4xl block font-bold pt-3 w-full text-center ">TEST DE {tipo}</h3>
+            <div className="space-y-10 px-5">
+            <h3 className="uppercase font-poppins text-azul text-4xl block font-bold py-3 px-5 rounded-xl bg-white w-full text-center ">TEST DE {tipo}</h3>
             <form
               className="!bg-opacity-95 shadow-lg bg-white"
               onSubmit={(e) => {

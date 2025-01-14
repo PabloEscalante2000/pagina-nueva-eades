@@ -7,6 +7,7 @@ import BloqueTest from './components/BloqueTest'
 import { testAnsiedad,testDepresion,testTLP} from './data/TestData';
 import WhIcon from './components/WhIcon';
 import React, { Suspense } from 'react';
+import TestHome from './pages/TestHome';
 
 const InicioPage = React.lazy(() => import('./pages/InicioPage'))
 const QuienesSomosPage = React.lazy(() => import('./pages/QuienesSomosPage'))
@@ -79,7 +80,7 @@ function App() {
             </Suspense>
           }/>   
         <Route path='*' element={<Navigate to="/inicio"/>}></Route>
-        <Route path='/test/' element={<Navigate to="/inicio"/>}/>
+        <Route path='/test/' element={<TestHome/>}/>
         <Route path='/test/test-de-ansiedad' element={<BloqueTest test={testAnsiedad} tipo={"ansiedad"}/>}/>
         <Route path='/test/test-de-depresion' element={<BloqueTest test={testDepresion} tipo={"depresión"}/>}/>
         <Route path='/test/test-de-transtorno-de-la-personalidad-tlp' element={<BloqueTest test={testTLP} tipo={"tlp"}/>}/>

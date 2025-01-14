@@ -1,19 +1,14 @@
 import { faWhatsapp, faSquareFacebook, faInstagram, faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useEffect } from "react";
-import { NavLink, useLocation, useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { faBars, faCaretDown, faCaretUp, faXmark } from "@fortawesome/free-solid-svg-icons";
 import logoEades from "/logo_eades.webp"
 import { useUbiContext } from "./UserContext";
 
 export default function NewNavBar() {
-
-  const location = useLocation()
   const history = useNavigate()
   const {actualizarUbi}=useUbiContext()
-
-  const [path, setPath] = useState("")
   const [visible, setVisible] = useState(false)
   const [listaDespegable, setListaDespegable] = useState(0)
 
@@ -43,10 +38,6 @@ export default function NewNavBar() {
       id:"bes-6"
     }
   ]
-
-  useEffect(() => {
-    setPath(location.pathname)
-  },[location])
 
   return (
     <>
@@ -197,7 +188,7 @@ export default function NewNavBar() {
           </ul>
         </li>
         <li className="relative group">
-          <p className={`cursor-pointer ${path.includes("test") ? "border-b-2 border-azul":""}`}>TEST</p>
+          <NavLink className={({isActive}) => `${isActive ? "border-b-2 border-azul":""}`} to={"/test"}>TEST</NavLink>
           <ul className="absolute bg-marroncito p-0 space-y-3 transition-all duration-300 opacity-0 z-0 h-0 overflow-hidden group-hover:z-10 group-hover:opacity-100 group-hover:h-fit group-hover:p-3">
             <li>
               <NavLink to={"/test/test-de-ansiedad"}>Test de Ansiedad</NavLink>
