@@ -29,8 +29,8 @@ export const psicologos = [
     nombre:"Mitzze Mayte Tupayachi Gamarra",
     cpp:"CPsP: 54995",
     datos:[
-      "Psicóloga organizacional con especialidad  en psicología empresarial y desarrollo del talento humano. ",
-      "Especialidad en Reclutamiento y selección de personal."
+      "Psicóloga y psicoterapeuta.",
+      "Especialista en terapia cognitiva conductual."
     ],
     img_url:img3
   },

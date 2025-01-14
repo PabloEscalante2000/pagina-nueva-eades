@@ -45,27 +45,40 @@ function QuienesSomosPage() {
   }
 
   return (
-    <>
-    <Helmet>
-      <title>EADES | Centro Psicoterapéutico | Quienes Somos</title>
-      <meta
-      name="description"
-      content="El centro psicoterapéutico realiza diferentes tipos de eventos, convenios y acercamientos, donde podamos ayudar y brindar la información necesaria."
-    />
-    </Helmet>
-    <NewNavBar/>
-      <section className="pri-qs">
-        <h1>Centro Psicoterapéutico EADES</h1>
-        <p>El centro psicoterapéutico realiza diferentes tipos de eventos, convenios y acercamientos, donde podamos ayudar y brindar la información necesaria.</p>
-      </section>
-      <section className="sm:p-10 p-5 flex gap-10 lg:flex-row flex-col">
-        <aside>
-          <h2 className="font-poppins sm:text-3xl text-xl text-azul font-bold">Quiénes Somos</h2>
-          <p className="font-open-sans text-lg text-azul py-10">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint, nisi quam a, non unde eligendi, eaque officia impedit voluptates minus quia nemo repellat. Illo adipisci, rerum ipsa fuga soluta similique? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique illum nulla dolore recusandae? Et non asperiores deleniti porro tenetur eligendi exercitationem, quis iste blanditiis quibusdam laboriosam doloribus quae dolore fugiat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste amet obcaecati doloremque mollitia hic! Corrupti fugit quis numquam provident error cumque fuga quidem sed quibusdam, inventore veniam, eveniet hic dolore?
-          </p>
-        </aside>
-        <img src="preguntas_frecuentes.jpg" className="h-96 flex-none object-cover object-center" alt="EADES"/>
+    <div className="bg-marroncito">
+      <Helmet>
+        <title>EADES | Centro Psicoterapéutico | Quienes Somos</title>
+        <meta
+        name="description"
+        content="El centro psicoterapéutico realiza diferentes tipos de eventos, convenios y acercamientos, donde podamos ayudar y brindar la información necesaria."
+      />
+      </Helmet>
+      <NewNavBar/>
+      <section className="flex w-full justify-stretch items-stretch aspect-video sm:flex-row flex-col" style={{
+        maxHeight:"calc(100dvh - 128px)"
+      }}>
+        <div className="relative basis-1/2 bg-red-50 min-h-64">
+          <img src="preguntas_frecuentes.jpg" className="absolute inset-0 size-full object-cover" alt="EADES" style={{
+            objectPosition:"25% 50%"
+          }}/>
+        </div>
+        <div className="basis-1/2 flex justify-center items-center ">
+          <div className="md:p-20 sm:p-10 p-5 space-y-10">
+            <h2 className="font-poppins text-azul font-bold xl:text-5xl lg:text-4xl md:text-3xl">Centro <br/> Psicoterapéutico <br/> EADES</h2>
+            <p className="font-open-sans text-azul xl:text-2xl lg:text-xl md:text-lg">
+            El centro psicoterapéutico realiza diferentes tipos de eventos, convenios y acercamientos, donde podamos ayudar y brindar la información necesaria.
+            </p>
+            <a 
+              href="https://api.whatsapp.com/send?phone=51930509438&text=Buenas%2C%20estoy%20interesad%40%20en%20sus%20servicios%2C%20mi%20nombre%20es..." 
+              target="_blank"
+              rel="noopener noreferrer" 
+              aria-label="Enlace para contactar a través de WhatsApp"
+              className="block px-5 py-3 bg-azul text-marroncito w-fit xl:text-3xl lg:text-2xl border-2 border-azul md:text-xl transition-all ease-in-out duration-500 hover:bg-marroncito hover:text-azul"
+            >
+              Contactar
+            </a>
+          </div>
+        </div>
       </section>
       <section className="ter-qs bg-marroncito">
         <h2>Conoce nuestro equipo de Psicoterapeutas</h2>
@@ -108,7 +121,7 @@ function QuienesSomosPage() {
         </section>
       </section>
       
-    </>
+    </div>
   )
 }
 

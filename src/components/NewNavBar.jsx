@@ -146,7 +146,7 @@ export default function NewNavBar() {
         </a>
       </section>
     </nav>
-    <header className="flex justify-between items-center gap-5 sm:px-10 px-5  font-poppins w-full bg-white text-azul">
+    <header className="flex justify-between items-center gap-5 sm:px-10 px-5  font-poppins w-full bg-marroncito text-azul">
       <img className="h-32" src={logoEades} alt="EADES"/>
       <ul className="sm:flex justify-center items-center gap-5 hidden">
         <li>
