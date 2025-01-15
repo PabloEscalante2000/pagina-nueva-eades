@@ -73,6 +73,29 @@ const diferencias = [
   }
 ]
 
+const serviciosPsicoterapeuticos = [
+  {
+    nombre:<>Niños</>,
+    img:niños,
+    ubi:"bs-1"
+  },
+  {
+    nombre:<>Jóvenes</>,
+    img:jovenes,
+    ubi:"bs-1"
+  },
+  {
+    nombre:<>Adultos</>,
+    img:adultos,
+    ubi:"bs-1"
+  },
+  {
+    nombre:<>Adultos<br/>Mayores</>,
+    img:adul_mayores,
+    ubi:"bs-1"
+  },
+]
+
 function InicioPage() {
 
   const {actualizarUbi}=useUbiContext()
@@ -101,14 +124,15 @@ function InicioPage() {
     <section className="space-y-5">
         <h2 className="font-poppins sm:px-10 px-5 sm:text-4xl text-xl py-10 text-azul font-bold">SERVICIOS PSICOTERAPÉUTICOS</h2>
         <section className="flex justify-center md:gap-10 gap-14 md:flex-row flex-col mb-10 py-10 sm:px-10 px-5 bg-celeste">
-          <div className="space-y-16 lg:space-y-0 flex lg:flex-row flex-col gap-10">
-            <aside className="transition-all duration-500 ease-in-out hover:-translate-y-6 space-y-8">
-              <img src={niños} className="md:w-96 md:h-96 w-full h-64 object-cover object-center aspect-square "/>
+          <div className="space-y-16 2xl:space-y-0 gap-10 grid 3xl:grid-cols-4 md:grid-cols-2 md:mx-auto">
+            {serviciosPsicoterapeuticos.map((val,i) => (
+              <aside key={i} className="transition-all duration-500 ease-in-out hover:-translate-y-6 space-y-8">
+              <img src={val.img} className="md:w-96 md:h-96 w-full h-64 object-cover object-center aspect-square "/>
               <div className="flex justify-between items-center text-4xl font-poppins text-azul sm:px-0 px-3">
-                <h3>Niños</h3>
+                <h3>{val.nombre}</h3>
                 <button className="transition-all duration-500 hover:text-marroncito"
                 onClick={()=>{
-                  actualizarUbi("bs-1")
+                  actualizarUbi(val.ubi)
                   history("/servicios")
                 }}
                 >
@@ -116,44 +140,8 @@ function InicioPage() {
                 </button>
               </div>
             </aside>
-            <aside className="transition-all duration-500 ease-in-out hover:-translate-y-6 space-y-8">
-              <img src={adultos} className="md:w-96 md:h-96 w-full h-64 object-cover object-center aspect-square"/>
-              <div className="flex justify-between items-center text-4xl font-poppins text-azul sm:px-0 px-3">
-                <h3>Adultos</h3>
-                <button className="transition-all duration-500 hover:text-marroncito" onClick={()=>{
-                  actualizarUbi("bs-3")
-                  history("/servicios")
-                }}>
-                  <FontAwesomeIcon icon={faArrowAltCircleRight} />
-                </button>
-              </div>
-            </aside>
-          </div>
-          <div className="md:mt-20 lg:mt-0 space-y-16 lg:space-y-0 flex lg:flex-row flex-col gap-10">
-            <aside className="transition-all duration-500 ease-in-out hover:-translate-y-6 space-y-8">
-              <img src={jovenes} className="md:w-96 md:h-96 w-full h-64 object-cover object-center aspect-square"/>
-              <div className="flex justify-between items-center text-4xl font-poppins text-azul sm:px-0 px-3">
-                <h3>Jóvenes</h3>
-                <button className="transition-all duration-500 hover:text-marroncito" onClick={()=>{
-                  actualizarUbi("bs-2")
-                  history("/servicios")
-                }}>
-                  <FontAwesomeIcon icon={faArrowAltCircleRight} />
-                </button>
-              </div>
-            </aside>
-            <aside className="transition-all duration-500 ease-in-out hover:-translate-y-6 space-y-8">
-              <img src={adul_mayores} className="md:w-96 md:h-96 w-full h-64 object-cover object-center aspect-square"/>
-              <div className="flex justify-between items-center text-4xl font-poppins text-azul sm:px-0 px-3">
-                <h3>Adultos <br/> Mayores</h3>
-                <button className="transition-all duration-500 hover:text-marroncito" onClick={()=>{
-                  actualizarUbi("bs-4")
-                  history("/servicios")
-                }}>
-                  <FontAwesomeIcon icon={faArrowAltCircleRight} />
-                </button>
-              </div>
-            </aside>
+            ))}
+            
           </div>
         </section>
     </section>
@@ -202,7 +190,7 @@ function InicioPage() {
       </section>
     </main>
       <section className="bg-marroncito">
-        <div className="max-w-[1500px] m-auto flex gap-10 md:flex-row flex-col md:justify-start justify-center md:p-10 p-5">
+        <div className="max-w-[1500px] m-auto flex gap-10 lg:flex-row flex-col lg:justify-start lg:items-start justify-center items-center lg:p-10 p-5">
           <video src="/video_maite.webm" className="object-center object-cover size-96 rounded-xl flex-none" alt="mayte" loop muted autoPlay/>
           <div className="text-azul font-open-sans space-y-3 flex flex-col justify-between">
             <div className="space-y-3">
@@ -216,25 +204,6 @@ function InicioPage() {
         </div>
       </section>
       <section className ="space-y-5">
-        
-        <section className="py-40 sm:px-10 px-5 flex justify-center items-center sm:gap-10 gap-5 flex-wrap">
-            <aside className="text-azul font-poppins font-bold flex flex-col justify-center items-center">
-              <h3 className="text-8xl">+30</h3>
-              <p className="text-lg text-center">años de experiencia</p>
-            </aside>
-            <aside className="text-azul font-poppins font-bold flex flex-col justify-center items-center">
-              <h3 className="text-8xl">+15</h3>
-              <p className="text-lg text-center">años de experiencia</p>
-            </aside>
-            <aside className="text-azul font-poppins font-bold flex flex-col justify-center items-center">
-              <h3 className="text-8xl">+15</h3>
-              <p className="text-lg text-center">años de experiencia</p>
-            </aside>
-            <aside className="text-azul font-poppins font-bold flex flex-col justify-center items-center">
-              <h3 className="text-8xl">+15</h3>
-              <p className="text-lg text-center">años de experiencia</p>
-            </aside>
-        </section>
         <h2 className="font-poppins sm:px-10 px-5 sm:text-4xl text-xl py-10 text-azul uppercase font-bold">Servicios especializados en educación</h2>
         <section className="flex md:justify-center md:items-start justify-stretch items-stretch md:flex-row flex-col md:gap-10 gap-14 bg-azul py-10">
           <aside className="transition-all duration-500 ease-in-out hover:-translate-y-6 space-y-8">
@@ -266,14 +235,16 @@ function InicioPage() {
       <section className="space-y-5 py-5 sm:py-10">
         <h2 className="text-azul text-4xl font-open-sans sm:px-10 px-5">Preguntas Frecuentes</h2>
         <section className="flex gap-10 lg:flex-row flex-col-reverse justify-center items-center md:justify-start sm:p-16 p-10">
-            <img src="/preguntas_frecuentes.jpg" className="lg:w-1/2 object-cover rounded-tr-2xl rounded-br-2xl aspect-video flex-none" />
-            <div className="grid gap-10 content-center xl:grid-cols-3 lg:grid-cols-2 sm:grid-cols-2 justify-center items-center w-fit">
+            <img src="/preguntas_frecuentes.jpg" className="lg:w-1/2 object-cover rounded-tr-2xl rounded-br-2xl aspect-video" />
+            <div className="grid gap-10 content-center 2xl:grid-cols-3 lg:grid-cols-2 sm:grid-cols-2 justify-center items-center w-fit">
               {preguntasFrecuentes.map((val,i) => (
                 <aside key={i} className="sm:size-52 bg-marroncito p-5 shadow-xl flex justify-around items-center sm:flex-col flex-row w-full rounded-2xl text-azul gap-5">
                   <p className="text-center font-poppins flex-1 py-2">
                     <FontAwesomeIcon icon={val.icon} className="text-xl"/><br/>{val.preg}
                   </p>
-                  <button className="px-3 py-1 block font-open-sans bg-azul text-marroncito rounded-lg transition-all ease-in-out duration-500 hover:bg-celeste" onClick={() => lanzarPregunta(val.preg,val.res)}>
+                  <button className="px-3 py-1 block font-open-sans bg-azul text-marroncito rounded-lg transition-all ease-in-out duration-500 hover:bg-celeste" 
+                  aria-label="Preguntas Frecuentes"
+                  onClick={() => lanzarPregunta(val.preg,val.res)}>
                     <span className="sm:block hidden">Más información</span>
                     <span className="sm:hidden block">
                       <FontAwesomeIcon icon={faCaretRight} />

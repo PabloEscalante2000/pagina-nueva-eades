@@ -15,6 +15,9 @@ export default {
         "poppins":["'Poppins-Regular'","sans-serif"],
         "open-sans":["'Open-Sans-Regular'","sans-serif"],
         "breathing":["'Breathing'","sans-serif"]
+      },
+      screens: {
+        "3xl":"1750px"
       }
     },
   },
