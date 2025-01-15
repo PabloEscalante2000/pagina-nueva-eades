@@ -2,7 +2,7 @@ import "./InicioPage.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import niños from "/niños2.jpg"
 import jovenes from "/jovenes.jpg"
-import adultos from "/adultos.jpg"
+import adultos from "/adultos2.jpg"
 import adul_mayores from "/adulto_mayor_servicio_eades.webp"
 import formacionTera from "/form_terapeutica.jpg"
 import colegios from "/colegios-eades-min.jpg"
@@ -122,13 +122,13 @@ function InicioPage() {
       <SwiperHome/>
     </div>
     <section className="space-y-5">
-        <h2 className="font-poppins sm:px-10 px-5 sm:text-4xl text-xl py-10 text-azul font-bold">SERVICIOS PSICOTERAPÉUTICOS</h2>
-        <section className="flex justify-center md:gap-10 gap-14 md:flex-row flex-col py-20 sm:px-10 px-5 bg-celeste">
-          <div className=" 2xl:space-y-0 gap-16 grid 3xl:grid-cols-4 md:grid-cols-2 md:mx-auto">
+        <h2 className="font-poppins sm:px-10 px-5 sm:text-4xl text-3xl py-10 text-azul font-bold">SERVICIOS PSICOTERAPÉUTICOS</h2>
+        <section className="flex justify-center md:flex-row flex-col py-20 lg:px-10 px-5 bg-celeste">
+          <div className="w-full 2xl:space-y-0 lg:gap-16 gap-10 grid lg:grid-cols-4 md:grid-cols-2 md:mx-auto">
             {serviciosPsicoterapeuticos.map((val,i) => (
-              <aside key={i} className="transition-all duration-500 ease-in-out hover:-translate-y-6 space-y-8">
-                <img src={val.img} className="md:w-96 md:h-96 w-full object-cover object-center aspect-square "/>
-                <div className="flex justify-between items-center text-4xl font-poppins text-azul sm:px-0 px-3">
+              <aside key={i} className="transition-all duration-500 ease-in-out hover:-translate-y-6 space-y-8 col-span-1">
+                <img src={val.img} className="w-full object-cover object-center aspect-square "/>
+                <div className="flex justify-between items-start text-4xl font-poppins text-azul sm:px-0 px-3">
                   <h3>{val.nombre}</h3>
                   <button className="transition-all duration-500 hover:text-marroncito"
                   onClick={()=>{
@@ -148,7 +148,7 @@ function InicioPage() {
     <section className="my-5 bg-marroncito text-azul">
           <div className="sm:px-10 sm:py-10 p-5 max-w-[1500px] m-auto flex md:flex-row flex-col md:justify-start md:items-stretch justify-center items-center sm:gap-10 gap-5">
           <img src="/fundador.jpg" alt="César Escalante Sifuentes" className="w-96 h-96 object-cover object-center rounded-lg flex-none"/>
-          <aside className="flex flex-col justify-between">
+          <aside className="flex flex-col justify-between gap-3">
             <div>
               <h2 className="font-poppins font-bold sm:text-4xl text-3xl">CONOCE AL FUNDADOR</h2>
               <span className="sm:text-2xl text-2xl font-open-sans text-black">César Escalante</span>
@@ -160,7 +160,7 @@ function InicioPage() {
               </span>
             </div>
             <div>
-                <button className="text-marroncito bg-azul px-5 py-2 font-poppins font-bold transition-all duration-500 hover:bg-celeste block ml-auto">
+                <button className="text-marroncito bg-azul px-5 py-2 font-poppins font-bold transition-all duration-500 hover:bg-celeste block">
                   Contáctanos
                 </button>
             </div>
@@ -204,7 +204,7 @@ function InicioPage() {
         </div>
       </section>
       <section className ="space-y-5">
-        <h2 className="font-poppins sm:px-10 px-5 sm:text-4xl text-xl py-10 text-azul uppercase font-bold">Servicios especializados en educación</h2>
+        <h2 className="font-poppins sm:px-10 px-5 sm:text-4xl text-3xl py-10 text-azul uppercase font-bold">Servicios especializados en educación</h2>
         <section className="flex md:justify-center md:items-start justify-stretch items-stretch md:flex-row flex-col md:gap-10 gap-14 bg-azul py-10">
           <aside className="transition-all duration-500 ease-in-out hover:-translate-y-6 space-y-8">
             <img src={formacionTera} className="md:w-96 md:h-96 w-full h-64 object-cover object-center aspect-square"/>
@@ -234,9 +234,13 @@ function InicioPage() {
         </section> 
       <section className="space-y-5 py-5 sm:py-10">
         <h2 className="text-azul text-4xl font-open-sans sm:px-10 px-5">Preguntas Frecuentes</h2>
-        <section className="flex gap-10 lg:flex-row flex-col-reverse justify-center items-center md:justify-start sm:p-16 p-10">
-            <img src="/preguntas_frecuentes.jpg" className="lg:w-1/2 object-cover rounded-tr-2xl rounded-br-2xl aspect-video" />
-            <div className="grid gap-10 content-center 2xl:grid-cols-3 lg:grid-cols-2 sm:grid-cols-2 justify-center items-center w-fit">
+        <section className="grid gap-10 lg:grid-cols-2 grid-cols-1 justify-center items-center md:justify-stretch md:items-stretch sm:p-16 p-10">
+          <div className="flex justify-center items-center">
+            <img src="/preguntas_frecuentes.jpg" className="w-full object-cover object-center rounded-r-2xl 2xl:h-full lg:h-2/3" style={{
+              objectPosition:"center"
+            }}/>
+          </div>
+            <div className="grid gap-10 content-center 2xl:grid-cols-3 lg:grid-cols-2 sm:grid-cols-2 justify-center items-center w-fit lg:mx-0 mx-auto">
               {preguntasFrecuentes.map((val,i) => (
                 <aside key={i} className="sm:size-52 bg-marroncito p-5 shadow-xl flex justify-around items-center sm:flex-col flex-row w-full rounded-2xl text-azul gap-5">
                   <p className="text-center font-poppins flex-1 py-2">

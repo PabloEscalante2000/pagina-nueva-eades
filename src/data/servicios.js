@@ -1,6 +1,6 @@
 import niños from "/niños2.jpg"
 import jovenes from "/jovenes.jpg"
-import adultos from "/adultos.jpg"
+import adultos from "/adultos2.jpg"
 import adul_mayores from "/adulto_mayor_servicio_eades.webp"
 import formacionTera from "/form_terapeutica.jpg"
 import colegios from "/colegios-eades-min.jpg"
