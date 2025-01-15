@@ -123,23 +123,23 @@ function InicioPage() {
     </div>
     <section className="space-y-5">
         <h2 className="font-poppins sm:px-10 px-5 sm:text-4xl text-xl py-10 text-azul font-bold">SERVICIOS PSICOTERAPÉUTICOS</h2>
-        <section className="flex justify-center md:gap-10 gap-14 md:flex-row flex-col mb-10 py-10 sm:px-10 px-5 bg-celeste">
-          <div className="space-y-16 2xl:space-y-0 gap-10 grid 3xl:grid-cols-4 md:grid-cols-2 md:mx-auto">
+        <section className="flex justify-center md:gap-10 gap-14 md:flex-row flex-col py-20 sm:px-10 px-5 bg-celeste">
+          <div className=" 2xl:space-y-0 gap-16 grid 3xl:grid-cols-4 md:grid-cols-2 md:mx-auto">
             {serviciosPsicoterapeuticos.map((val,i) => (
               <aside key={i} className="transition-all duration-500 ease-in-out hover:-translate-y-6 space-y-8">
-              <img src={val.img} className="md:w-96 md:h-96 w-full h-64 object-cover object-center aspect-square "/>
-              <div className="flex justify-between items-center text-4xl font-poppins text-azul sm:px-0 px-3">
-                <h3>{val.nombre}</h3>
-                <button className="transition-all duration-500 hover:text-marroncito"
-                onClick={()=>{
-                  actualizarUbi(val.ubi)
-                  history("/servicios")
-                }}
-                >
-                  <FontAwesomeIcon icon={faArrowAltCircleRight} />
-                </button>
-              </div>
-            </aside>
+                <img src={val.img} className="md:w-96 md:h-96 w-full object-cover object-center aspect-square "/>
+                <div className="flex justify-between items-center text-4xl font-poppins text-azul sm:px-0 px-3">
+                  <h3>{val.nombre}</h3>
+                  <button className="transition-all duration-500 hover:text-marroncito"
+                  onClick={()=>{
+                    actualizarUbi(val.ubi)
+                    history("/servicios")
+                  }}
+                  >
+                    <FontAwesomeIcon icon={faArrowAltCircleRight} />
+                  </button>
+                </div>
+              </aside>
             ))}
             
           </div>

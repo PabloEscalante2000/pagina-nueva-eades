@@ -58,7 +58,7 @@ function QuienesSomosPage() {
         maxHeight:"calc(100dvh - 128px)"
       }}>
         <div className="relative basis-1/2 bg-red-50 min-h-64">
-          <img src="preguntas_frecuentes.jpg" className="absolute inset-0 size-full object-cover" alt="EADES" style={{
+          <img src="quienes_somos_port.jpg" className="absolute inset-0 size-full object-cover" alt="EADES" style={{
             objectPosition:"25% 50%"
           }}/>
         </div>

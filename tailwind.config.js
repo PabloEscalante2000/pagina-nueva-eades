@@ -17,7 +17,7 @@ export default {
         "breathing":["'Breathing'","sans-serif"]
       },
       screens: {
-        "3xl":"1750px"
+        "3xl":"1800px"
       }
     },
   },
