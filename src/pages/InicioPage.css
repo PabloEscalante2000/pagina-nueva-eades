@@ -35,6 +35,7 @@
 
 .flip-card {
     perspective: 1000px; /* Habilita la perspectiva 3D */
+    -webkit-perspective: 1000px;
 }
 
 .flip-card-inner {
@@ -48,7 +49,8 @@
 
 .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
-    -webkit-transform: rotateY(180deg); /* ? Safari */
+    -webkit-transform: rotateY(180deg);
+    will-change: transform; /* ? Safari */
 }
 
 .flip-card-front, .flip-card-back {
