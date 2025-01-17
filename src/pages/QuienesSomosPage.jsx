@@ -10,6 +10,7 @@ import { psicologos } from "../data/psicologos"
 import { useMemo, useState } from "react"
 import { Helmet } from "react-helmet"
 import NewNavBar from "../components/NewNavBar"
+import CarruselProfSm from "../components/CarruselProfSm"
 
 function QuienesSomosPage() {
 
@@ -55,7 +56,7 @@ function QuienesSomosPage() {
       </Helmet>
       <NewNavBar/>
       <section className="flex w-full justify-stretch items-stretch aspect-video sm:flex-row flex-col" style={{
-        maxHeight:"calc(100dvh - 128px)"
+        minHeight:"calc(100dvh - 128px)"
       }}>
         <div className="relative basis-1/2 bg-red-50 min-h-64">
           <img src="quienes_somos_port.jpg" className="absolute inset-0 size-full object-cover" alt="EADES" style={{
@@ -63,8 +64,8 @@ function QuienesSomosPage() {
           }}/>
         </div>
         <div className="basis-1/2 flex justify-center items-center ">
-          <div className="md:p-20 sm:p-10 p-5 space-y-10">
-            <h2 className="font-poppins text-azul font-bold xl:text-5xl lg:text-4xl md:text-3xl">Centro <br/> Psicoterapéutico <br/> EADES</h2>
+          <div className="md:p-20 sm:p-10 p-5 sm:space-y-10 space-y-5">
+            <h2 className="font-poppins text-azul font-bold xl:text-5xl lg:text-4xl md:text-3xl sm:text-2xl text-xl">Centro <br/> Psicoterapéutico <br/> EADES</h2>
             <p className="font-open-sans text-azul xl:text-2xl lg:text-xl md:text-lg">
             El centro psicoterapéutico realiza diferentes tipos de eventos, convenios y acercamientos, donde podamos ayudar y brindar la información necesaria.
             </p>
@@ -73,42 +74,50 @@ function QuienesSomosPage() {
               target="_blank"
               rel="noopener noreferrer" 
               aria-label="Enlace para contactar a través de WhatsApp"
-              className="block px-5 py-3 bg-azul text-marroncito w-fit xl:text-3xl lg:text-2xl border-2 border-azul md:text-xl transition-all ease-in-out duration-500 hover:bg-marroncito hover:text-azul"
+              className=" px-5 py-3 bg-azul text-marroncito w-fit xl:text-3xl lg:text-2xl border-2 border-azul md:text-xl transition-all ease-in-out duration-500 hover:bg-marroncito hover:text-azul sm:block hidden"
             >
               Contactar
             </a>
           </div>
         </div>
       </section>
-      <section className="ter-qs bg-marroncito">
-        <h2>Conoce nuestro equipo de Psicoterapeutas</h2>
-        <section className="qs-cont-psi">
-          <span onClick={backPsi} className={psi <= 0 ? "unactive":""}><FontAwesomeIcon icon={faArrowLeft}/></span>
-          <section className="psi-data">
-            <img src={psicologo.img_url} alt={psicologo.nombre} className={classPsi}/>
-            <aside>
-              <h3>{psicologo.nombre}</h3>
-              <em>{psicologo?.cpp}</em>
-              <ul>
-                {psicologo.datos.map((e,index)=>{
-                  return(<li key={index}>{e}</li>)
-                })}
-              </ul>
-              <a href="https://api.whatsapp.com/send?phone=51930509438&text=Buenas%2C%20estoy%20interesad%40%20en%20sus%20servicios%2C%20mi%20nombre%20es..." target="_blank" className="border-2 border-azul px-3 py-1 bg-azul text-marroncito transition-all ease-in-out font-poppins hover:bg-marroncito hover:text-azul duration-500">Agenda tu cita</a>
-            </aside>
-            
+      <div className="sm:block hidden">
+        <section className="ter-qs bg-marroncito p-10">
+          <h2>Conoce nuestro equipo de Psicoterapeutas</h2>
+          <section className="qs-cont-psi">
+            <span onClick={backPsi} className={psi <= 0 ? "unactive":""}><FontAwesomeIcon icon={faArrowLeft}/></span>
+            <section className="psi-data">
+              <img src={psicologo.img_url} alt={psicologo.nombre} className={classPsi}/>
+              <aside>
+                <h3>{psicologo.nombre}</h3>
+                <em>{psicologo?.cpp}</em>
+                <ul>
+                  {psicologo.datos.map((e,index)=>{
+                    return(<li key={index}>{e}</li>)
+                  })}
+                </ul>
+                <a href="https://api.whatsapp.com/send?phone=51930509438&text=Buenas%2C%20estoy%20interesad%40%20en%20sus%20servicios%2C%20mi%20nombre%20es..." target="_blank" className="border-2 border-azul px-3 py-1 bg-azul text-marroncito transition-all ease-in-out font-poppins hover:bg-marroncito hover:text-azul duration-500">Agenda tu cita</a>
+              </aside>
+              
+            </section>
+            <span onClick={nextPsi} className={psi >= 3 ? "unactive":""}><FontAwesomeIcon icon={faArrowRight}/></span>
           </section>
-          <span onClick={nextPsi} className={psi >= 3 ? "unactive":""}><FontAwesomeIcon icon={faArrowRight}/></span>
+          <aside className="clave-psi">
+            {psicologos.map((e,index)=>{
+              return (
+              <div key={index} onClick={()=>setPsi(index)} className={psi===index ? "active-cl": "def-cl"}></div>)
+            })}
+          </aside>
         </section>
-        <aside className="clave-psi">
-          {psicologos.map((e,index)=>{
-            return (
-            <div key={index} onClick={()=>setPsi(index)} className={psi===index ? "active-cl": "def-cl"}></div>)
-          })}
-        </aside>
-      </section>
+      </div>
+      <div className="sm:hidden block w-screen py-5">
+        <h2 className="px-5 font-poppins font-bold text-2xl text-center text-azul">Conoce nuestro equipo de Psicoterapeutas</h2>
+        <div className="w-full">
+            <CarruselProfSm/>
+        </div>
+      </div>
       <section className="sec-qs ">
-        <h2>Alianzas con nuestro Centro Psicoterapéutico</h2>
+        <h2 className="">Alianzas con nuestro Centro Psicoterapéutico</h2>
         <section>
           <img src={logo1} alt="Educare convenio EADES"/>
           <img src={logo2} alt="Apciba convenio EADES"/>

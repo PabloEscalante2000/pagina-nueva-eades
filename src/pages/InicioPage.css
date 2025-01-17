@@ -42,11 +42,13 @@
     height: 100%;
     transition: transform 0.7s;
     transform-style: preserve-3d; /* Mantiene las caras en 3D */
+    -webkit-transform-style: preserve-3d; /* ? Safari */
     position: relative;
 }
 
 .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg); /* ? Safari */
 }
 
 .flip-card-front, .flip-card-back {
@@ -54,6 +56,7 @@
     width: 100%;
     height: 100%;
     backface-visibility: hidden; /* Oculta la cara trasera */
+    -webkit-backface-visibility: hidden; /* ? Para Safari */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -62,6 +65,7 @@
 
 .flip-card-back {
     transform: rotateY(180deg); /* Hace que esté oculta inicialmente */
+    -webkit-transform: rotateY(180deg); /* ? Safari */
 }
 
 .swiper-inicio {
