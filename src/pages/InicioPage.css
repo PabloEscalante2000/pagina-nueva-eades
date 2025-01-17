@@ -13,12 +13,6 @@
     }
 }
 
-@media (max-width:630px) {
-    body #pri-img3 {
-
-    }
-}
-
 @media (max-width:450px) {
     body .pri-inicio img {
         width: 200px;
