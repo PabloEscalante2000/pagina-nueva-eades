@@ -112,9 +112,7 @@ function QuienesSomosPage() {
       </div>
       <div className="sm:hidden block w-screen py-5">
         <h2 className="px-5 font-poppins font-bold text-2xl text-center text-azul">Conoce nuestro equipo de Psicoterapeutas</h2>
-        <div className="w-full">
-            <CarruselProfSm/>
-        </div>
+        <CarruselProfSm/>
       </div>
       <section className="sec-qs ">
         <h2 className="">Alianzas con nuestro Centro Psicoterapéutico</h2>
