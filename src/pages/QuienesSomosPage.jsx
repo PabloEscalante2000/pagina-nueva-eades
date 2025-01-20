@@ -46,7 +46,7 @@ function QuienesSomosPage() {
   }
 
   return (
-    <div className="bg-marroncito">
+    <div className="bg-marroncito overflow-x-hidden">
       <Helmet>
         <title>EADES | Centro Psicoterapéutico | Quienes Somos</title>
         <meta

@@ -41,6 +41,7 @@ export default function NewNavBar() {
 
   return (
     <>
+    <div className={`${visible ? "block":"hidden"} fixed w-screen h-dvh top-0 left-0 bg-black bg-opacity-80 z-40`} onClick={() => setVisible(false)}></div>
     <nav className={`fixed left-full pt-5 w-52 z-50 text-azul font-poppins transition-all ease-in-out bg-marroncito h-dvh duration-500 flex flex-col justify-between ${visible ? "top-0 -translate-x-full opacity-100":"top-0 translate-x-0 opacity-0"}`}>
       <section>
       <div className="flex justify-end p-5">
