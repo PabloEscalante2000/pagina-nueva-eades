@@ -7,7 +7,7 @@ import adul_mayores from "/adulto_mayor_servicio_eades.webp"
 import formacionTera from "/form_terapeutica.jpg"
 import colegios from "/colegios-eades-min.jpg"
 import { faClock, faMoneyBill1 } from "@fortawesome/free-regular-svg-icons"
-import { faUsers, faUserGear, faArrowAltCircleRight, faCaretRight} from "@fortawesome/free-solid-svg-icons"
+import { faUsers, faUserGear, faArrowAltCircleRight, faCaretRight, faDesktop, faChild} from "@fortawesome/free-solid-svg-icons"
 import {useUbiContext} from "../components/UserContext"
 import { useNavigate } from "react-router-dom"
 import dif1 from "/virtual.jpg"
@@ -44,14 +44,14 @@ const preguntasFrecuentes = [
     res:"Sí, contamos con una tarifa social (además de la tarifa regular)."
   },
   {
-    preg:"¿Cuál es la diferencia con otro tipo de terapia?",
-    icon:faUsers,
-    res:"Hacemos un seguimiento constante al paciente. El terapeuta siempre va estar dispuesto a conversar con el paciente, incluso fuera del horario de las sesiones."
+    preg:"¿La psicoterapia es online o solo presencial?",
+    icon:faDesktop,
+    res:"La terapia puede hacerce de manera online o presencial "
   },
   {
-    preg:"¿Tienen tarifa social?",
-    icon:faUserGear,
-    res:"Sí, contamos con una tarifa social (además de la tarifa regular)."
+    preg:"¿El centro ofrece terapia para niños/adolescentes?",
+    icon:faChild,
+    res:"Sí, gracias a la colaboración de PSERES ofrecemos servicios a niños y adolecentes."
   }
 ]
 
