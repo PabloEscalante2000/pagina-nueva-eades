@@ -19,14 +19,14 @@ export default function SwiperHome() {
       >
       <SwiperSlide>
       <section className="h-dvh w-screen bg-bottom bg-cover sm:p-10 p-5  pri-img1">
-        <div className='w-fit mt-32 space-y-3 p-10 font-poppins text-azul bg-marroncito bg-opacity-60 backdrop-blur-sm'>
+        <div className='w-fit mt-32 space-y-3 p-10 font-poppins text-azul bg-marroncito bg-opacity-70 backdrop-blur-sm'>
           <h1 className='sm:text-5xl text-3xl font-bold'>Tu bienestar<br/> es nuestra prioridad</h1>
         </div>
       </section>
       </SwiperSlide>
       <SwiperSlide>
-      <section className="h-dvh w-screen bg-bottom bg-cover sm:p-10 p-5 pri-img2">
-        <div className='w-fit mt-32 space-y-3 p-10 font-poppins text-azul bg-marroncito bg-opacity-60 backdrop-blur-sm'>
+      <section className="h-dvh w-screen bg-top bg-cover sm:p-10 p-5 pri-img2 flex justify-end flex-col">
+        <div className='w-fit mt-32 space-y-3 p-10 font-poppins text-azul bg-marroncito bg-opacity-70 backdrop-blur-sm'>
           <h1 className='sm:text-5xl text-3xl font-bold'>Nos adaptamos<br/> a tus necesidades</h1>
         </div>
       </section>

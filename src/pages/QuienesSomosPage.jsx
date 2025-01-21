@@ -55,29 +55,20 @@ function QuienesSomosPage() {
       />
       </Helmet>
       <NewNavBar/>
-      <section className="flex w-full justify-stretch items-stretch aspect-video sm:flex-row flex-col" style={{
-        minHeight:"calc(100dvh - 128px)"
+      <section className="flex w-full justify-stretch items-stretch aspect-video lg:flex-row flex-col" style={{
+        height:"calc(100dvh - 128px)"
       }}>
-        <div className="relative basis-1/2 bg-red-50 min-h-64">
+        <div className="relative basis-7/12 bg-red-50 md:min-h-[400px] min-h-64">
           <img src="quienes_somos_port.jpg" className="absolute inset-0 size-full object-cover" alt="EADES" style={{
-            objectPosition:"25% 50%"
+            objectPosition:"50% 35%"
           }}/>
         </div>
-        <div className="basis-1/2 flex justify-center items-center ">
+        <div className="basis-5/12 flex justify-center items-center ">
           <div className="md:p-20 sm:p-10 p-5 sm:space-y-10 space-y-5">
             <h2 className="font-poppins text-azul font-bold xl:text-5xl lg:text-4xl md:text-3xl sm:text-2xl text-xl">Centro <br/> Psicoterapéutico <br/> EADES</h2>
             <p className="font-open-sans text-azul xl:text-2xl lg:text-xl md:text-lg">
             El centro psicoterapéutico realiza diferentes tipos de eventos, convenios y acercamientos, donde podamos ayudar y brindar la información necesaria.
             </p>
-            <a 
-              href="https://api.whatsapp.com/send?phone=51930509438&text=Buenas%2C%20estoy%20interesad%40%20en%20sus%20servicios%2C%20mi%20nombre%20es..." 
-              target="_blank"
-              rel="noopener noreferrer" 
-              aria-label="Enlace para contactar a través de WhatsApp"
-              className=" px-5 py-3 bg-azul text-marroncito w-fit xl:text-3xl lg:text-2xl border-2 border-azul md:text-xl transition-all ease-in-out duration-500 hover:bg-marroncito hover:text-azul sm:block hidden"
-            >
-              Contactar
-            </a>
           </div>
         </div>
       </section>
