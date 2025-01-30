@@ -30,7 +30,7 @@ export const servicios = [
     id:"bs-2",
     nombre: "Jóvenes",
     descripcion: [
-      "Acompañamos al adolecente y/o joven en su proceso de búsqueda de identidad, promoviendo el autoconocimiento y crecimiento personal.",
+      "Acompañamos al adolescente y/o joven en su proceso de búsqueda de identidad, promoviendo el autoconocimiento y crecimiento personal.",
       "Apoyamos a solucionar:",
     ],
     datos: [
