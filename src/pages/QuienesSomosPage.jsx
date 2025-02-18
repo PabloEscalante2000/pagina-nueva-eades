@@ -67,7 +67,7 @@ function QuienesSomosPage() {
           <div className="md:p-20 sm:p-10 p-5 sm:space-y-10 space-y-5">
             <h2 className="font-poppins text-azul font-bold xl:text-5xl lg:text-4xl md:text-3xl sm:text-2xl text-xl">Centro <br/> Psicoterapéutico <br/> EADES</h2>
             <p className="font-open-sans text-azul xl:text-2xl lg:text-xl md:text-lg">
-              Estamos preparados para ayudar a nuestros pacientes con nuestro conocimiento y experiencia especializados en la psicología. Trabajamos de manera profesional con nuestros profesionales cualificados.
+            Espacio de bienestar emocional, trabajamos desde un enfoque integral que considera tus pensamientos, emociones, cuerpo y relaciones para ayudarte a encontrar equilibrio en todas las áreas de tu vida. 🌿💙
             </p>
           </div>
         </div>
@@ -89,7 +89,6 @@ function QuienesSomosPage() {
                 </ul>
                 <a href="https://api.whatsapp.com/send?phone=51930509438&text=Buenas%2C%20estoy%20interesad%40%20en%20sus%20servicios%2C%20mi%20nombre%20es..." target="_blank" className="border-2 border-azul px-3 py-1 bg-azul text-marroncito transition-all ease-in-out font-poppins hover:bg-marroncito hover:text-azul duration-500">Agenda tu cita</a>
               </aside>
-              
             </section>
             <span onClick={nextPsi} className={psi >= 3 ? "unactive":""}><FontAwesomeIcon icon={faArrowRight}/></span>
           </section>
