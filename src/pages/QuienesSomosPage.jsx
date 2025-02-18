@@ -67,7 +67,7 @@ function QuienesSomosPage() {
           <div className="md:p-20 sm:p-10 p-5 sm:space-y-10 space-y-5">
             <h2 className="font-poppins text-azul font-bold xl:text-5xl lg:text-4xl md:text-3xl sm:text-2xl text-xl">Centro <br/> Psicoterapéutico <br/> EADES</h2>
             <p className="font-open-sans text-azul xl:text-2xl lg:text-xl md:text-lg">
-            Espacio de bienestar emocional, trabajamos desde un enfoque integral que considera tus pensamientos, emociones, cuerpo y relaciones para ayudarte a encontrar equilibrio en todas las áreas de tu vida. 🌿💙
+            Espacio de bienestar emocional, trabajamos desde un enfoque integral que considera tus pensamientos, emociones, cuerpo y relaciones para ayudarte a encontrar equilibrio en todas las áreas de tu vida.
             </p>
           </div>
         </div>
