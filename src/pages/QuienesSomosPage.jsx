@@ -50,9 +50,9 @@ function QuienesSomosPage() {
       <Helmet>
         <title>EADES | Centro Psicoterapéutico | Quienes Somos</title>
         <meta
-        name="description"
-        content="El centro psicoterapéutico realiza diferentes tipos de eventos, convenios y acercamientos, donde podamos ayudar y brindar la información necesaria."
-      />
+          name="description"
+          content="El centro psicoterapéutico realiza diferentes tipos de eventos, convenios y acercamientos, donde podamos ayudar y brindar la información necesaria."
+        />
       </Helmet>
       <NewNavBar/>
       <section className="flex w-full justify-stretch items-stretch aspect-video lg:flex-row flex-col" style={{
@@ -67,7 +67,7 @@ function QuienesSomosPage() {
           <div className="md:p-20 sm:p-10 p-5 sm:space-y-10 space-y-5">
             <h2 className="font-poppins text-azul font-bold xl:text-5xl lg:text-4xl md:text-3xl sm:text-2xl text-xl">Centro <br/> Psicoterapéutico <br/> EADES</h2>
             <p className="font-open-sans text-azul xl:text-2xl lg:text-xl md:text-lg">
-            El centro psicoterapéutico realiza diferentes tipos de eventos, convenios y acercamientos, donde podamos ayudar y brindar la información necesaria.
+              Estamos preparados para ayudar a nuestros pacientes con nuestro conocimiento y experiencia especializados en la psicología. Trabajamos de manera profesional con nuestros profesionales cualificados.
             </p>
           </div>
         </div>
