@@ -19,6 +19,10 @@ function Footer() {
             <FontAwesomeIcon icon={faLocationDot} />{" "}
             Pasaje El Pacayar 149, La Aurora - Miraflores
           </p>
+          <p>
+            <FontAwesomeIcon icon={faLocationDot} />{" "}
+            Jr. Cosmos 144 - Santiago de Surco
+          </p>
         </div>
         <div>
           <p>
