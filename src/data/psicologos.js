@@ -2,6 +2,7 @@ import img1 from "/fundador.jpg"
 import img2 from "/mateo.jpg"
 import img3 from "/mayte_psi.jpg"
 import img4 from "/melissa_psi.jpg"
+import img5 from "/april.jpg"
 
 export const psicologos = [
     {
@@ -42,5 +43,14 @@ export const psicologos = [
       "Docente en teoría psicoanalítica en Grupo EADES."
     ],
     img_url:img4
-  }
+  },
+  {
+    nombre:"Abril Gutierrez",
+    cpp:"CPP:36054",
+    datos:[
+    "Licenciada en psicología clínica.",
+    "Escpecialista en Terapia cognitivo-conductual."
+    ],
+    img_url:img5
+  },
 ]
