@@ -2,7 +2,6 @@ import img1 from "/depresion-blog-eades.jpeg"
 import img2 from "/eades-tlp-blog.jpeg"
 import img3 from "/ataque-de-panico-eades-blog.jpeg"
 import img4 from "/agotamiento-emocional-eades-blog.jpeg"
-import img5 from "/transtorno-de-personalidad-eades-blog.webp"
 import img6 from "/congreso-internacional-eades.jpg"
 import img7 from "/ansiedad_eades_blog.jpg"
 
@@ -38,7 +37,7 @@ export const blog5 = {
     url:"/blog/transtorno-de-personalidad",
     nombre:"Transtorno de la Personalidad: ¿Cómo identificar y actuar sobre estos problemas?",
     descrpcion:"Sabes en qué consisten los trastornos de la personalidad? ¿Crees que padeces de un desorden mental? Descubre los diferentes tipos de trastornos de la personalidad y a cómo identificarlos. Un trastorno de la personalidad es una de las enfermedades mentales que más puede condicionar la vida de aquellos que lo padecen. De esta forma, estas enfermedades mentales pueden deben ser diagnosticadas y tratadas con la ayuda de profesionales de la salud mental. Descubre cómo identificarles y cuáles son las más comunes.",
-    img_url:img5
+    img_url:img1
 }
 
 export const blog6 = {

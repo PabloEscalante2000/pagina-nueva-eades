@@ -12,7 +12,6 @@ import {useUbiContext} from "../components/UserContext"
 import { useNavigate } from "react-router-dom"
 import dif1 from "/virtual.jpg"
 import dif2 from "/nuevo_eades_2.jpeg"
-import dif3 from "/seguimiento_constante.jpg"
 
 // Import Swiper styles
 import 'swiper/css';
@@ -58,7 +57,7 @@ const preguntasFrecuentes = [
 const diferencias = [
   {
     nombre:"Seguimiento Constante",
-    img:dif3,
+    img:dif1,
     descripcion:"Estamos contigo en cada etapa de tu proceso terapéutico, asegurándonos de que avances de manera sostenida hacia tus objetivos"
   },
   {

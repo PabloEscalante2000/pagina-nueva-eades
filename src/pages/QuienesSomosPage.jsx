@@ -1,7 +1,5 @@
 import "./QuienesSomosPage.css"
 import logo1 from "/educare.webp"
-import logo2 from "/apciba_convenio.webp"
-import logo4 from "/universidad_del_pacifico_convenio.webp"
 import logo5 from "/esc_convenio_eades.webp"
 import logo6 from "/ilumina_convenio_eades.webp"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -108,11 +106,7 @@ function QuienesSomosPage() {
         <h2 className="">Alianzas con nuestro Centro Psicoterapéutico</h2>
         <section>
           <img src={logo1} alt="Educare convenio EADES"/>
-          <img src={logo2} alt="Apciba convenio EADES"/>
-          <figure>
-            <img src={logo4} alt="Universidad del Pacífico convenio EADES"/>
-            <figcaption>2019-2021</figcaption>
-          </figure>
+          
           <img src={logo5} alt="ESC Escucha Soluciona Crece convenio EADES"/>
           <img src={logo6} alt="Ilumina convenio EADES"/>
         </section>

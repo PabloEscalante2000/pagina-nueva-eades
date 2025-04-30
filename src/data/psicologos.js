@@ -2,12 +2,11 @@ import img1 from "/fundador.jpg"
 import img2 from "/mateo.jpg"
 import img3 from "/mayte_psi.jpg"
 import img4 from "/melissa_psi.jpg"
-import img5 from "/april.jpg"
 
 export const psicologos = [
     {
         nombre:"Mg. César Escalante",
-        cpp:"CPP:29611",
+        cpp:"CPsP:29611",
         datos:[
         "Psicólogo Clínico con Maestría en Neuropsicología.",
         "Psicoterapeuta psicoanalítico con expertiz en trastorno de la personalidad, depresión y ansiedad.",
@@ -43,14 +42,5 @@ export const psicologos = [
       "Docente en teoría psicoanalítica en Grupo EADES."
     ],
     img_url:img4
-  },
-  {
-    nombre:"Abril Gutierrez",
-    cpp:"CPP:36054",
-    datos:[
-    "Licenciada en psicología clínica.",
-    "Escpecialista en Terapia cognitivo-conductual."
-    ],
-    img_url:img5
-  },
+  }
 ]
