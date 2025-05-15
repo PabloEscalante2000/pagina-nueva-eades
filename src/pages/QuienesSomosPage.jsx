@@ -76,7 +76,7 @@ function QuienesSomosPage() {
           <section className="qs-cont-psi">
             <span onClick={backPsi} className={psi <= 0 ? "unactive":""}><FontAwesomeIcon icon={faArrowLeft}/></span>
             <section className="psi-data">
-              <img src={psicologo.img_url} alt={psicologo.nombre} className={classPsi}/>
+              <img src={psicologo.img_url} alt={psicologo.nombre} className={classPsi} />
               <aside>
                 <h3>{psicologo.nombre}</h3>
                 <em>{psicologo?.cpp}</em>

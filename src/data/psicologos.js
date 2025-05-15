@@ -1,4 +1,4 @@
-import img1 from "/fundador.jpg"
+import img1 from "/fundador.jpeg"
 import img2 from "/mateo.jpg"
 import img3 from "/mayte_psi.jpg"
 import img4 from "/melissa_psi.jpg"
