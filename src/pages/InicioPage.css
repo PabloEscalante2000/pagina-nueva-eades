@@ -1,0 +1,427 @@
+@media (max-width: 700px) {
+  body .qb-inicio-video iframe {
+    width: 280px;
+    height: 157.5px;
+  }
+
+  body .pri-inicio div h1 {
+    font-size: var(--small);
+  }
+
+  body #dif-eades {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 450px) {
+  body .pri-inicio img {
+    width: 200px;
+  }
+
+  body .pri-inicio h1 {
+    font-size: var(--medium);
+  }
+
+  body .cuart-inicio h2 {
+    font-size: var(--xxmedium);
+  }
+}
+
+.landingVideo {
+  aspect-ratio: 16/11;
+}
+
+.flip-card {
+  perspective: 1000px; /* Habilita la perspectiva 3D */
+  -webkit-perspective: 1000px;
+}
+
+.flip-card-inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.7s;
+  transform-style: preserve-3d; /* Mantiene las caras en 3D */
+  -webkit-transform-style: preserve-3d; /* ? Safari */
+  position: relative;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  will-change: transform; /* ? Safari */
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /* Oculta la cara trasera */
+  -webkit-backface-visibility: hidden; /* ? Para Safari */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg); /* Hace que esté oculta inicialmente */
+  -webkit-transform: rotateY(180deg); /* ? Safari */
+}
+
+.swiper-inicio {
+  width: 100%;
+  box-sizing: border-box;
+  display: block;
+  z-index: 1;
+}
+
+.pri-inicio {
+  position: relative;
+  padding: 0;
+  font-family: "Poppins-Regular";
+  width: 100%;
+  aspect-ratio: 4/2;
+  background-position: center;
+  background-size: cover;
+  cursor: grab;
+  text-align: justify;
+}
+
+.pri-img1 {
+  background-image: url(/alternativa_eades.jpg);
+}
+
+.pri-img2 {
+  background-image: url(/alternativa_eades2.jpg);
+}
+
+.pri-img3 {
+  background-image: url(/alta_eades_2.jpg);
+}
+
+.pri-inicio div {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  border-radius: 0;
+  top: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(240, 237, 234, 0.8);
+  padding: 0.5rem;
+  backdrop-filter: blur(5px);
+}
+
+.pri-inicio h1 {
+  font-size: var(--medium);
+  font-family: "Poppins-Bold";
+  color: var(--azul-oscuro);
+  max-width: 850px;
+}
+
+.pri-inicio p {
+  font-size: var(--small);
+  font-family: "Open-Sans-Regular";
+  color: var(--azul-oscuro);
+  max-width: 800px;
+}
+
+.pri-inicio img {
+  width: 400px;
+}
+
+.sec-inicio {
+  padding: 50px;
+}
+
+.sec-inicio h2 {
+  font-size: var(--azul-oscuro);
+  font-family: "Poppins-Regular";
+  font-size: var(--medium);
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.dif-inicio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.dif-inicio aside {
+  max-width: 400px;
+}
+
+.dif-cons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dif-cons img {
+  height: 30px;
+  text-align: center;
+}
+
+.dif-cons h4 {
+  font-family: "Poppins-Regular";
+  font-size: var(--xmedium);
+  color: black;
+  opacity: 0.6;
+}
+
+.dif-cons section article {
+  border: 5px solid black;
+  min-height: 300px;
+  border-radius: 50px;
+  padding: 25px;
+  margin: 10px;
+}
+
+.dif-cons section h3 {
+  font-family: "Poppins-Regular";
+  font-size: var(--medium);
+}
+
+.dif-cons section p {
+  font-family: "Open-Sans-Regular";
+  font-size: var(--small);
+  padding-bottom: 30px;
+}
+
+#dif-eades {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+#dif-eades article {
+  border: 5px solid var(--azul-claro);
+}
+
+#dif-eades h3 {
+  color: var(--azul-oscuro);
+}
+
+#dif-eades p {
+  color: var(--azul-claro);
+}
+
+#dif-otros {
+  opacity: 0.5;
+}
+
+#myVideo {
+  width: 80%;
+  height: auto;
+  border: 5px solid #333;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+  transition: opacity 0.3s;
+  opacity: 0.5;
+}
+
+#myVideo:hover {
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+.qb-inicio-video {
+  margin: auto;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.qb-inicio-video iframe {
+  width: 560px;
+  height: 315px;
+}
+
+.ter-inicio {
+  padding: 50px;
+  min-height: 400px;
+  background: linear-gradient(
+      to bottom,
+      rgba(145, 166, 206, 0.8),
+      rgba(92, 116, 165, 0.8)
+    ),
+    url(/eades_servicios_de_calidad.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.ter-inicio h2 {
+  font-family: "Poppins-SemiBold";
+  font-size: var(--medium);
+  color: var(--azul-oscuro);
+  max-width: 600px;
+  padding-bottom: 20px;
+}
+
+.ter-inicio p {
+  font-family: "Open-Sans-Regular";
+  font-size: var(--small);
+  max-width: 600px;
+}
+
+.cuart-inicio {
+  padding: 50px;
+}
+
+.cuart-inicio h2 {
+  font-family: "Poppins-Regular";
+  font-size: var(--medium);
+  color: var(--azul-oscuro);
+}
+
+.serv-inicio {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.carrusel {
+  width: 100%;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.serv-inicio aside {
+  margin: auto;
+  max-width: 300px;
+  border: 1px solid var(--azul-claro);
+  box-shadow: 1.5px 1.5px 1.5px var(--azul-claro);
+  min-height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: normal;
+}
+
+#pseres-display {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+#pseres-display h3 {
+  padding-left: 20px;
+  padding-bottom: 0;
+}
+
+#pseres-display section {
+  background-color: var(--azul-oscuro);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 30px;
+  width: 110px;
+  cursor: pointer;
+}
+
+#pseres-display img {
+  height: 20px;
+  object-fit: contain;
+}
+
+.serv-inicio aside img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.serv-inicio aside h3 {
+  padding-left: 20px;
+  padding-bottom: 10px;
+  font-family: "Poppins-Regular";
+  font-size: var(--xmedium);
+  color: var(--azul-oscuro);
+}
+
+.serv-inicio aside p {
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: "Open-Sans-Regular";
+  font-size: var(--small);
+  color: var(--azul-claro);
+  padding-bottom: 10px;
+}
+
+.serv-inicio aside span {
+  margin: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 3px solid var(--azul-claro);
+  cursor: pointer;
+  font-family: "Open-Sans-Regular";
+  font-size: var(--small);
+  color: var(--azul-claro);
+  text-align: center;
+  transition: all 0.25s ease;
+}
+
+.serv-inicio aside span:hover {
+  background-color: var(--azul-claro);
+  color: white;
+}
+
+.preg-frec {
+  padding: 50px;
+}
+
+.preg-frec h2 {
+  color: var(--azul-oscuro);
+  font-family: "Poppins-SemiBold";
+  font-size: var(--medium);
+  padding-bottom: 20px;
+}
+
+.preg-frec section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.preg-frec section aside {
+  max-width: 200px;
+  padding: 10px;
+  text-align: center;
+}
+
+.preg-frec section aside div {
+  color: var(--azul-oscuro);
+  font-size: var(--medium);
+}
+
+.preg-frec section aside h3 {
+  font-family: "Poppins-Regular";
+  color: var(--azul-oscuro);
+  font-size: var(--xxmedium);
+  padding-bottom: 10px;
+}
+
+.preg-frec section aside span {
+  font-family: "Open-Sans-Regular";
+  font-size: var(--small);
+  color: var(--azul-claro);
+}

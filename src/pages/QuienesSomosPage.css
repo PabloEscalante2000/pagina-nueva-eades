@@ -1,0 +1,178 @@
+@media (max-width:550px) {
+    body .pri-qs h1 {
+        font-size: var(--medium);
+    }
+
+    body .psi-data img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+.pri-qs {
+    padding: 50px;
+    min-height: 500px;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0.4), rgba(255,255,255,0.4)), url(/eades_local_consultorio-min.JPG);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pri-qs h1 {
+    font-family: "Poppins-SemiBold";
+    color: var(--azul-oscuro);
+    font-size: var(--big);
+    padding-bottom: 20px;
+    max-width: 600px;
+}
+
+.pri-qs p {
+    font-family: "Open-Sans-Regular";
+    color: var(--azul-oscuro);
+    font-size: var(--small);
+    max-width: 400px;
+}
+
+.sec-qs {
+    padding: 50px;
+    min-height: 400px;
+    background-color: var(--celeste);
+}
+
+.sec-qs h2 {
+    font-size: var(--medium);
+    font-family: "Poppins-Regular";
+    color: var(--azul-oscuro);
+    padding-bottom: 30px;
+}
+
+.sec-qs section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.sec-qs section img {
+    width: 150px;
+    margin: 10px;
+}
+
+.sec-qs figcaption {
+    font-family: "Poppins-Regular";
+    font-size: var(--small);
+    text-align: center;
+    color: var(--azul-oscuro);
+    margin-top: -50px;
+}
+
+.ter-qs h2 {
+    font-family: "Poppins-Regular";
+    font-size: var(--medium);
+    color: var(--azul-oscuro);
+    padding-bottom: 20px;
+}
+
+.qs-cont-psi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.qs-cont-psi span {
+    color: var(--azul-oscuro);
+    font-size: var(--medium);
+    padding: 20px;
+    cursor: pointer;
+}
+
+.qs-cont-psi .unactive {
+    color: gray;
+    cursor: default;
+}
+
+.psi-data img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 30px;
+}
+
+.psi-data .melissa-img {
+    object-position: center;
+    object-fit: cover;
+}
+
+.psi-data .mateo-img {
+    object-position: top;
+    object-fit: contain;
+}
+
+.psi-data .cesar-img {
+    object-position: center;
+    object-fit: cover;
+}
+
+.psi-data .mayte-img {
+    object-position: top;
+    object-fit: cover;
+}
+
+.psi-data {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.psi-data aside {
+    max-width: 350px;
+    margin: 20px;
+}
+
+.psi-data h3 {
+    font-family: "Poppins-Regular";
+    color: var(--azul-oscuro);
+    font-size: var(--xmedium);
+}
+
+.psi-data em {
+    font-family: "Open-Sans-Regular";
+    color: var(--celeste);
+    font-size: var(--xxmedium);
+}
+
+.psi-data ul {
+    list-style: square;
+    padding: 20px;
+    font-family: "Open-Sans-Regular";
+    font-size: var(--small);
+    color: var(--azul-claro);
+}
+
+.clave-psi {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clave-psi div {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin: 10px;
+    box-sizing: border-box;
+    border-radius: 50%;
+}
+
+.active-cl {
+    background-color: var(--azul-oscuro);
+}
+
+.def-cl {
+    border: 2px solid var(--azul-oscuro);
+}

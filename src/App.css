@@ -1,0 +1,69 @@
+:root {
+    --azul-oscuro: #41588e;
+    --azul-claro:#41588e;
+    --celeste:#b0c4df;
+    --blanco:#ffffff;
+    --beige:#f0edea;
+    --xsmall:12px;
+    --small:16px;
+    --xxmedium:18px;
+    --xmedium:24px;
+    --medium:32px;
+    --big:48px;
+    --xbig:60px;
+    --xxbig:72px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.modal-promocion {
+    top: 50%;
+      left: 50%;
+      right: auto;
+      bottom: auto;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);
+      width:60%;
+      position:relative;
+      z-index: 99;
+}
+
+.left-point {
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+}
+
+/* Cambiar el color de las flechas */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #41588e !important; /* Cambia a tu color preferido */
+}
+
+/* Cambiar el tamaño de las flechas */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 20px; /* Ajusta el tamaño */
+}
+
+.swiper-pagination-bullet {
+  width: 10px !important;
+  height: 10px !important;
+  background-color: white !important; /* Color predeterminado */
+  opacity: 0.6 !important; /* Transparencia predeterminada */
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #41588e !important; /* Color activo */
+  opacity: 1 !important; /* Sin transparencia */
+}
+
+.swiper-pagination-bullet-active {
+  transform: scale(2) !important; /* Aumenta el tamaño */
+}
+
+.swiper-pagination {
+  bottom: 50px !important; /* Ajusta este valor según sea necesario */
+}

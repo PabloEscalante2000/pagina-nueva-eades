@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Poppins-Bold";
+    src: url(./fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Poppins-SemiBold";
+    src: url(./fonts/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: "Poppins-Medium";
+    src: url(./fonts/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Poppins-Regular";
+    src: url(./fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Poppins-Light";
+    src: url(./fonts/Poppins-Light.ttf);
+}
+
+@font-face {
+    font-family: "Open-Sans-Bold";
+    src: url(./fonts//OpenSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Open-Sans-Medium";
+    src: url(./fonts/OpenSans-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Open-Sans-Regular";
+    src: url(./fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Open-Sans-Light";
+    src: url(./fonts/OpenSans-Light.ttf);
+}
+
+@font-face {
+    font-family: "Breathing";
+    src: url(./fonts/Breathing.ttf);
+}
+
+@layer base {
+    @font-face {
+        font-family: "Poppins-Regular";
+        src: url(./fonts/Poppins-Regular.ttf) format("truetype");
+        font-display: swap;
+        font-style: normal;
+        font-weight: 400;
+    }
+
+    @font-face {
+        font-family: "Open-Sans-Regular";
+        src: url(./fonts/OpenSans-Regular.ttf) format("truetype");
+        font-display: swap;
+        font-style: normal;
+        font-weight: 400;
+    }
+
+    @font-face {
+        font-family: "Breathing";
+        src: url(./fonts/Breathing.ttf) format("truetype");
+        font-display: swap;
+        font-style: normal;
+        font-weight: 400;
+    }
+}

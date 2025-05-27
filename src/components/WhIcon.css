@@ -1,0 +1,16 @@
+.sticky-wh{
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    font-family: "Poppins-Regular";
+    font-size: 1.5rem;
+    padding: 20px;
+    color: white;
+    background-color: var(--azul-oscuro);
+    border-radius: 10px;
+    z-index: 10;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid var(--celeste);
+    transition: all ease 0.3s;
+}

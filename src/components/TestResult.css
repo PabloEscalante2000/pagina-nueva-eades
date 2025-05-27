@@ -1,0 +1,33 @@
+.resp-test {
+    background: var(--celeste);
+    padding: 50px;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: var(--xxmedium);
+    color: var(--azul-oscuro);
+    font-family: "Open-Sans-Regular";
+}
+
+.resp-test p {
+    max-width: 1000px;
+}
+
+.resp-test button {
+    border: 1px solid var(--azul-oscuro);
+    background: none;
+    padding: 10px;
+    border-radius: 20px;
+    color: var(--azul-oscuro);
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.25s ease;
+}
+
+.resp-test button:hover {
+    background-color: var(--azul-oscuro);
+    color: var(--celeste);
+}

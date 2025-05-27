@@ -1,0 +1,108 @@
+@media (max-width:550px) {
+    body .pri-serv h1 {
+        font-size: var(--medium);
+    }
+
+    body .pri-serv aside {
+        grid-template-columns: 100px 100px;
+        grid-template-rows:  100px 100px;
+        gap: 10px;
+    }
+
+    body .pri-serv aside div {
+        font-size: var(--xsmall);
+    }
+}
+
+.pri-serv {
+    background-image: linear-gradient(to bottom, rgba(240,237,234,0.8), rgba(240,237,234,0.0)), url(/servicios_port.jpg);
+}
+
+.img-serv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.img-serv img {
+    width: 400px;
+    height: 200px;
+    object-position: center;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 1px solid var(--azul-oscuro);
+    margin: auto;
+}
+
+.img-serv .top-img {
+    object-position: 0px 25%;
+}
+
+.sec-serv {
+    padding: 50px;
+    transition: all 1s ease;
+}
+
+.disapear { 
+    transform: translateY(50px);
+    opacity: 0;
+}
+
+.appear {
+    transform: translateY(0px);
+    opacity: 100%;
+}
+
+.sec-serv h2 {
+    font-family: "Poppins-Regular";
+    color: var(--azul-oscuro);
+    font-size: var(--medium);
+    padding-bottom: 20px;
+}
+
+.sec-serv section {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+}
+
+.sec-serv section article {
+    max-width: 400px;
+    padding: 20px;
+    margin: 10px;
+    border: 2px solid var(--azul-claro);
+    box-shadow: 2px 2px 2px var(--azul-claro);
+    border-radius: 30px;
+}
+
+.sec-serv section article h3 {
+    font-family: "Poppins-Regular";
+    font-size: var(--xmedium);
+    color: var(--azul-oscuro);
+    padding-bottom: 20px;
+}
+
+.sec-serv section article p {
+    font-family: "Open-Sans-Regular";
+    font-size: var(--small);
+    padding: 5px 0px;
+    color: var(--azul-claro);
+}
+
+.sec-serv section article ul {
+    padding: 20px;
+    font-size: var(--small);
+    font-family: "Open-Sans-Regular";
+    color: var(--azul-claro);
+    list-style: square;
+}
+
+.sec-serv section article span {
+    color: var(--azul-oscuro);
+}
+
+
+
