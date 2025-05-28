@@ -7,7 +7,7 @@ import adul_mayores from "/adulto_mayor_servicio_eades.webp"
 import formacionTera from "/form_terapeutica.jpg"
 import colegios from "/taller_evento.jpg"
 import { faClock, faMoneyBill1 } from "@fortawesome/free-regular-svg-icons"
-import { faUsers, faUserGear, faArrowAltCircleRight, faCaretRight, faDesktop, faChild} from "@fortawesome/free-solid-svg-icons"
+import { faUsers, faUserGear, faArrowAltCircleRight, faCaretRight, faDesktop, faChild, faLocationDot} from "@fortawesome/free-solid-svg-icons"
 import {useUbiContext} from "../components/UserContext"
 import { useNavigate } from "react-router-dom"
 import dif1 from "/virtual.jpg"
@@ -127,9 +127,13 @@ function InicioPage() {
           <video className="absolute w-full h-full inset-0 object-cover object-top " muted loop autoPlay>
               <source src={videoLanding} type="video/mp4" />
           </video>
-            <div className='absolute top-3 left-3 w-fit space-y-3 p-10 font-poppins text-azul bg-marroncito bg-opacity-50 backdrop-blur-sm lg:block hidden'>
-              <h1 className='sm:text-5xl text-3xl font-bold'>Nos adaptamos<br/> a tus necesidades</h1>
-            </div>
+          <div className='lg:block hidden w-fit absolute -translate-y-1/2 top-1/2 left-3 space-y-3 p-10 font-poppins text-azul bg-marroncito bg-opacity-70 backdrop-blur-sm'>
+            <h1 className='sm:text-5xl text-3xl font-bold'>Tu bienestar<br/> es nuestra prioridad</h1>
+          </div>
+          <div className="absolute top-3 left-1/2 -translate-x-1/2 p-3 text-white font-poppins bg-azul bg-opacity-40 rounded-lg backdrop-blur-sm">
+            <p><FontAwesomeIcon icon={faLocationDot}/> SURCO</p>
+            <p><FontAwesomeIcon icon={faLocationDot}/> MIRAFLORES</p>
+          </div>
         </div>
     </div>
     <section className="space-y-5">
