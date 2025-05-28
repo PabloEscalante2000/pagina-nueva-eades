@@ -127,12 +127,12 @@ function InicioPage() {
           <video className="absolute w-full h-full inset-0 object-cover object-top " muted loop autoPlay>
               <source src={videoLanding} type="video/mp4" />
           </video>
-          <div className='lg:block hidden w-fit absolute -translate-y-1/2 top-1/2 left-3 space-y-3 p-10 font-poppins text-azul bg-marroncito bg-opacity-70 backdrop-blur-sm'>
+          <div className='lg:block hidden w-fit absolute top-3 left-3 space-y-3 p-10 font-poppins text-azul bg-marroncito bg-opacity-70 backdrop-blur-sm'>
             <h1 className='sm:text-5xl text-3xl font-bold'>Tu bienestar<br/> es nuestra prioridad</h1>
           </div>
-          <div className="absolute top-3 left-1/2 -translate-x-1/2 p-3 text-white font-poppins bg-azul bg-opacity-40 rounded-lg backdrop-blur-sm">
-            <p><FontAwesomeIcon icon={faLocationDot}/> SURCO</p>
-            <p><FontAwesomeIcon icon={faLocationDot}/> MIRAFLORES</p>
+          <div className="absolute top-3 right-3 p-3 text-azul font-poppins bg-opacity-40 rounded-lg backdrop-blur-sm flex justify-center items-center gap-4">
+            <p><FontAwesomeIcon icon={faLocationDot}/> SEDE SURCO</p>
+            <p><FontAwesomeIcon icon={faLocationDot}/> SEDE MIRAFLORES</p>
           </div>
         </div>
     </div>
