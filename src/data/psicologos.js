@@ -37,7 +37,6 @@ export const psicologos = [
   {
     nombre:"Melissa Alejandra Huaman Sánchez",
     datos:[
-      "Abogada especializada en Derecho Corporativo.",
       "Facilitadora Psicoterapéutica Psicoanalítica.",
       "Docente en teoría psicoanalítica en Grupo EADES."
     ],
