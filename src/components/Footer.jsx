@@ -26,7 +26,18 @@ function Footer() {
   const handleSubmit = async (e) => {
     e.preventDefault()
     try {
-      const res = await fetch("")
+      const res = await fetch("https://sendemaileades.pabloescalantetovar.com/",{
+        method:"POST",
+        headers: {
+          "Content-Type":"application/json"
+        },
+        body:JSON.stringify(form)
+      })
+
+      const data = await res.text()
+      alert(data)
+      setPop(false)
+
     } catch (error) {
         alert("Error al enviar: " + error.message)
     }
@@ -81,7 +92,7 @@ function Footer() {
         </button>
         <img src={fondo_espera} className="absolute w-full h-full inset-0 object-cover object-center z-10" />
         <div className="absolute w-full h-full inset-0 bg-black/40 z-10"/>
-        <form className="relative z-20 font-poppins space-y-5">
+        <form onSubmit={handleSubmit} className="relative z-20 font-poppins space-y-5">
           <h2 className="text-center sm:text-lg text-sm text-white">
             ¡Habla con un Experto!<br/>
             Nuestro amigable equipo estará dispuesto a responder tus preguntas
