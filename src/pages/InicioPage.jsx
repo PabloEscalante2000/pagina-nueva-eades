@@ -11,7 +11,8 @@ import { faUsers, faUserGear, faArrowAltCircleRight, faCaretRight, faDesktop, fa
 import {useUbiContext} from "../components/UserContext"
 import { useNavigate } from "react-router-dom"
 import dif1 from "/virtual.jpg"
-import dif2 from "/nuevo_eades_2.jpeg"
+import dif3 from "/Integral.PNG?url"
+import dif2 from "/enfoqueIntegral.webp"
 import sip from "/sip_logo.png"
 import iaoth from "/iaoth.jpeg"
 import euroasopsy from "/euroasopsy.png"
@@ -22,7 +23,6 @@ import member from "/member.jpeg"
 import 'swiper/css';
 import "swiper/css/navigation";
 import { Helmet } from "react-helmet"
-import videoLanding from "/video_fondo_eades5.webm"
 import NewNavBar from "../components/NewNavBar"
 import Swal from "sweetalert2"
 
@@ -72,7 +72,7 @@ const diferencias = [
   },
   {
     nombre:"Diseño personalizado",
-    img:dif1,
+    img:dif3,
     descripcion:"Creamos soluciones únicas, adaptadas a tus necesidades y metas específicas, porque entendemos que cada persona es diferente."
   }
 ]
@@ -123,14 +123,6 @@ function InicioPage() {
       <div className=" top-0 left-0 z-10 w-full">
           <NewNavBar/>
       </div>
-      <div className="w-full aspect-video relative max-h-[calc(100dvh_-_128px)]">
-          <video className="absolute w-full h-full inset-0 object-cover object-top " muted loop autoPlay>
-              <source src={videoLanding} type="video/mp4" />
-          </video>
-            <div className='absolute top-3 left-3 w-fit space-y-3 p-10 font-poppins text-azul bg-marroncito bg-opacity-50 backdrop-blur-sm lg:block hidden'>
-              <h1 className='sm:text-5xl text-3xl font-bold'>Nos adaptamos<br/> a tus necesidades</h1>
-            </div>
-        </div>
     </div>
     <section className="space-y-5">
         <h2 className="font-poppins sm:px-10 px-5 sm:text-4xl text-3xl py-10 text-azul font-bold">SERVICIOS PSICOTERAPÉUTICOS</h2>
@@ -158,7 +150,7 @@ function InicioPage() {
     </section>
     <section className="my-5 bg-marroncito text-azul">
           <div className="sm:px-10 sm:py-10 p-5 max-w-[1500px] m-auto flex md:flex-row flex-col md:justify-start md:items-stretch justify-center items-center sm:gap-10 gap-5">
-          <img src="/fundador.jpg" alt="César Escalante Sifuentes" className="w-96 h-96 object-cover object-center rounded-lg flex-none"/>
+          <img src="/CesarEscalante.webp" alt="César Escalante Sifuentes" className="w-96 h-96 object-cover object-top rounded-lg flex-none"/>
           <aside className="flex flex-col justify-between gap-3">
             <div>
               <h2 className="font-poppins font-bold sm:text-4xl text-3xl">CONOCE AL FUNDADOR</h2>
