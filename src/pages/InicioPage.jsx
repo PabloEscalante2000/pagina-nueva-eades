@@ -194,8 +194,6 @@ function InicioPage() {
                     <img src={euroasopsy} className="h-20" alt="IAOTH"/>
                     <span>Asociación Europea de Psicología Aplicada (EAAP)</span>
                 </div>
-                
-                
             </div>
         </div>
     <main className="sec-inicio">
