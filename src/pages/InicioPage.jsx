@@ -18,6 +18,7 @@ import iaoth from "/iaoth.jpeg"
 import euroasopsy from "/euroasopsy.png"
 import nspa from "/nspa.png"
 import member from "/member.jpeg"
+import videoLanding2 from "/video_last.webm"
 
 // Import Swiper styles
 import 'swiper/css';
@@ -123,6 +124,12 @@ function InicioPage() {
       <div className=" top-0 left-0 z-10 w-full">
           <NewNavBar/>
       </div>
+    </div>
+    {/* Video */}
+    <div className="w-full aspect-video max-h-[700px] min-h-[300px] relative">
+        <video className="absolute w-full h-full inset-0 object-cover object-center" muted loop autoPlay>
+            <source src={videoLanding2} type="video/webm" />
+        </video>
     </div>
     <section className="space-y-5">
         <h2 className="font-poppins sm:px-10 px-5 sm:text-4xl text-3xl py-10 text-azul font-bold">SERVICIOS PSICOTERAPÉUTICOS</h2>
