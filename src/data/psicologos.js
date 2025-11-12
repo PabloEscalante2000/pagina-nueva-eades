@@ -2,6 +2,7 @@ import img1 from "/fundador.jpeg"
 import img2 from "/mateo.jpg"
 import img3 from "/mayte_psi.jpg"
 import img4 from "/melissa_psi.jpg"
+import img5 from "/naty.jpg"
 
 export const psicologos = [
     {
@@ -41,5 +42,13 @@ export const psicologos = [
       "Docente en teoría psicoanalítica en Grupo EADES."
     ],
     img_url:img4
+  },
+  {
+    nombre:"Natalia Rosa Escalante Tovar",
+    datos:[
+      "Licenciada en educación primaria - UMNCH Magister en dificultades de Aprendizaje (PUCP).",
+      "Docente con experiencia en abordaje escolar a niños con trastornos del neurodesarrollo."
+    ],
+    img_url:img5
   }
 ]

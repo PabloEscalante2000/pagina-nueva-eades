@@ -19,6 +19,10 @@ import euroasopsy from "/euroasopsy.png"
 import nspa from "/nspa.png"
 import member from "/member.jpeg"
 import videoLanding2 from "/video_last.webm"
+import kora from "/kora.png"
+import noetica from "/noetica.png"
+import pseres from "/pseres.png"
+import yachay from "/yachay.png"
 
 // Import Swiper styles
 import 'swiper/css';
@@ -178,31 +182,48 @@ function InicioPage() {
           </div>
         </section>
     <div className="py-12 flex flex-col gap-10 xl:w-[1200px] w-full justify-center items-center mx-auto font-poppins">
-            <h1 className="text-marron-oscuro text-center p-5 text-4xl font-poppins">Asociado a estas instituciones</h1>
-            <div className="flex pt-10 flex-wrap gap-10 justify-center items-start">
-                <div className="max-w-[300px] text-center font-poppins-light flex flex-col justify-center items-center gap-5">
-                    <img src={sip} className="h-20" alt="SIP"/>
-                    <span>Sociedad Interamericana de Psicología (SIP)</span>
-                </div>
-                <div className="max-w-[300px] text-center font-poppins-light flex flex-col justify-center items-center gap-5">
-                    <img src={nspa} className="h-20" alt="Asociación NSAP"/>
-                    <span>Sociedad Internacional de Neuropsicoanálisis</span>
-                </div>
-                <div className="max-w-[300px] text-center font-poppins-light flex flex-col justify-center items-center gap-5">
-                    <img src={member} className="h-20" alt="London Intercultural Center"/>
-                    <span>Centro Intercultural de Londres (LIC)</span>
-                </div>
-                <div className="max-w-96 text-center font-poppins-light flex flex-col justify-center items-center gap-5 mt-10">
-                    <img src={iaoth} className="h-20" alt="IAOTH"/>
-                    <span>Asociación Internacional de Terapeutas (IAOTH)</span>
-                </div>
+        <h1 className="text-marron-oscuro text-center p-5 text-4xl font-poppins text-azul">Asociado a estas instituciones</h1>
+        <div className="flex pt-10 flex-wrap gap-10 justify-center items-start">
+            <div className="max-w-[300px] text-center font-poppins-light flex flex-col justify-center items-center gap-5">
+                <img src={sip} className="h-20" alt="SIP"/>
+                <span>Sociedad Interamericana de Psicología (SIP)</span>
+            </div>
+            <div className="max-w-[300px] text-center font-poppins-light flex flex-col justify-center items-center gap-5">
+                <img src={nspa} className="h-20" alt="Asociación NSAP"/>
+                <span>Sociedad Internacional de Neuropsicoanálisis</span>
+            </div>
+            <div className="max-w-[300px] text-center font-poppins-light flex flex-col justify-center items-center gap-5">
+                <img src={member} className="h-20" alt="London Intercultural Center"/>
+                <span>Centro Intercultural de Londres (LIC)</span>
+            </div>
+            <div className="max-w-96 text-center font-poppins-light flex flex-col justify-center items-center gap-5 mt-10">
+                <img src={iaoth} className="h-20" alt="IAOTH"/>
+                <span>Asociación Internacional de Terapeutas (IAOTH)</span>
+            </div>
 
-                <div className=" max-w-[560px] text-center font-poppins-light flex flex-col justify-center items-center gap-5 mt-10">
-                    <img src={euroasopsy} className="h-20" alt="IAOTH"/>
-                    <span>Asociación Europea de Psicología Aplicada (EAAP)</span>
-                </div>
+            <div className=" max-w-[560px] text-center font-poppins-light flex flex-col justify-center items-center gap-5 mt-10">
+                <img src={euroasopsy} className="h-20" alt="IAOTH"/>
+                <span>Asociación Europea de Psicología Aplicada (EAAP)</span>
             </div>
         </div>
+    </div>
+    <div className="py-12 flex flex-col gap-10 xl:w-[1200px] w-full justify-center items-center mx-auto font-poppins">
+      <h1 className="text-marron-oscuro text-center p-5 text-4xl font-poppins text-azul">Nuestras marcas aliadas</h1>
+      <div className="flex pt-10 flex-wrap gap-10 justify-center items-start">
+        <div className="max-w-[300px] text-center font-poppins-light flex flex-col justify-center items-center gap-5">
+            <img src={kora} alt="KORA"/>
+        </div>
+        <div className="max-w-[300px] text-center font-poppins-light flex flex-col justify-center items-center gap-5">
+            <img src={noetica} alt="NOÉTICA"/>
+        </div>
+        <div className="max-w-[300px] text-center font-poppins-light flex flex-col justify-center items-center gap-5">
+            <img src={pseres} alt="pseres"/>
+        </div>
+        <div className="max-w-[300px] text-center font-poppins-light flex flex-col justify-center items-center gap-5">
+            <img src={yachay} alt="Yachay"/>
+        </div>
+      </div>
+    </div>
     <main className="sec-inicio">
       <h2 className="!text-3xl sm:!text-5xl !font-poppins font-bold text-azul mb-20">¿Cómo nos diferenciamos de otros?</h2>
       <section className="flex justify-center items-center flex-wrap gap-24">
