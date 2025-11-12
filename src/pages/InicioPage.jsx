@@ -7,7 +7,7 @@ import adul_mayores from "/adulto_mayor_servicio_eades.webp"
 import formacionTera from "/form_terapeutica.jpg"
 import colegios from "/taller_evento.jpg"
 import { faClock, faMoneyBill1 } from "@fortawesome/free-regular-svg-icons"
-import { faUsers, faUserGear, faArrowAltCircleRight, faCaretRight, faDesktop, faChild} from "@fortawesome/free-solid-svg-icons"
+import { faUsers, faUserGear, faArrowAltCircleRight, faCaretRight, faDesktop, faChild, faLocationDot} from "@fortawesome/free-solid-svg-icons"
 import {useUbiContext} from "../components/UserContext"
 import { useNavigate } from "react-router-dom"
 import dif1 from "/virtual.jpg"
@@ -128,12 +128,14 @@ function InicioPage() {
       <div className=" top-0 left-0 z-10 w-full">
           <NewNavBar/>
       </div>
-    </div>
-    {/* Video */}
-    <div className="w-full aspect-video max-h-[700px] min-h-[300px] relative">
-        <video className="absolute w-full h-full inset-0 object-cover object-center" muted loop autoPlay>
-            <source src={videoLanding2} type="video/webm" />
-        </video>
+      <div className="w-full aspect-video relative max-h-[calc(100dvh_-_128px)]">
+          <video className="absolute w-full h-full inset-0 object-cover object-top " muted loop autoPlay>
+              <source src={videoLanding} type="video/mp4" />
+          </video>
+            <div className='absolute top-3 left-3 w-fit space-y-3 p-10 font-poppins text-azul bg-marroncito bg-opacity-50 backdrop-blur-sm lg:block hidden'>
+              <h1 className='sm:text-5xl text-3xl font-bold'>Nos adaptamos<br/> a tus necesidades</h1>
+            </div>
+        </div>
     </div>
     <section className="space-y-5">
         <h2 className="font-poppins sm:px-10 px-5 sm:text-4xl text-3xl py-10 text-azul font-bold">SERVICIOS PSICOTERAPÉUTICOS</h2>
